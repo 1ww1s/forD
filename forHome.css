@@ -1,0 +1,65 @@
+html, body{
+margin: 0;
+padding: 0
+}
+
+#B-Size-Contents{
+	overflow:hidden;
+	background-color:white;
+	width:100%;
+}
+
+#B-Master-Permanent-Makeup{
+	background:linear-gradient(125.11deg, rgba(18, 16, 13, 0.9) -1.31%, rgba(0, 0, 0, 0.9) 78.26%);
+	overflow:hidden;
+	width: 100%;
+	height: 777px;	
+	margin:0 auto;
+	padding:10px;
+}
+
+
+
+#BT-Master-Permanent-Makeup{
+	width:90%;  
+	margin:200px auto 0 auto;
+	overflow:hidden;
+	text-align: center;
+	
+}
+
+#text{
+	width:400px;
+	
+	background-color:grey;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+	text-shadow: 1px 0 1px black, 
+	0 1px 1px black, 
+	-1px 0 1px black, 
+	0 -1px 1px black;
+}
+
+.T-Master{
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 79.2px;  /*коэфф 2.2*/
+	line-height: 44px;
+	text-align: center;
+	letter-spacing: 0.195em;
+	margin-bottom:70px;
+}
+.T-Permanent-Makeup{
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size:46px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.4em;
+}
