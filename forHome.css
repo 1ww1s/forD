@@ -3,21 +3,28 @@ margin: 0;
 padding: 0;
 font-family: 'Montserrat', sans-serif;
 }
-
+	
+	#container{
+		width:100vw;
+		height:100vh;
+	}
+	
 /*  Master Permanent Makeup  */
 	#B-Master-Permanent-Makeup{
 		background:linear-gradient(125.11deg, rgba(18, 16, 13, 0.9) -1.31%, rgba(0, 0, 0, 0.9) 78.26%);
 		overflow:hidden;
-		width: 100%;
+		width: 1000px;
 		height: 1800px;	
 		margin:0 auto;
 	}
 
+	
+	
+	
 	#B-Size-Contents{
 		overflow:hidden;
 		margin:0 auto;
-		width:1100px;
-		max-width:100%;
+		width: 1000px;
 	}
 
 	#B-Button{
@@ -141,3 +148,4 @@ font-family: 'Montserrat', sans-serif;
 
 	
 /**/
+
