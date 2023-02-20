@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 html, body{
 margin: 0;
 padding: 0;
@@ -5,28 +7,54 @@ font-family: 'Montserrat', sans-serif;
 }
 	
 	#container{
-		width:100vw;
-		height:100vh;
 	}
+	
 	
 /*  Master Permanent Makeup  */
 	#B-Master-Permanent-Makeup{
-		background:linear-gradient(125.11deg, rgba(18, 16, 13, 0.9) -1.31%, rgba(0, 0, 0, 0.9) 78.26%);
-		overflow:hidden;
-		width: 1000px;
-		height: 1800px;	
+		background:linear-gradient(
+		
+		#000000 15.15%,
+		#FFFFFF 22.52%,
+		rgba(0, 0, 0, 0) 44.32%,
+		#FFFFFF 66.63%,
+		#FFFFFF 82.42%,
+		#000000 100%,
+		);
+		
+		background: radial-gradient(63.16% 110.39% at 25.49% 50.07%, #3D2E20 0%, #14110E 65.59%);
+		
+		width:100%;
 		margin:0 auto;
 	}
 
-	
-	
+	#Navigation{
+		width:755px;
+		height:40x;
+		margin: 40px auto 0 auto;
+		text-align:center;
+		font-family: 'Montserrat', sans-serif;
+		font-weight:200;
+	}
+	.nav a{
+		margin:0 22px;
+		text-decoration:none;
+		font-style: normal;
+		font-weight: 200;
+		font-size: 17px;
+		line-height: 24px;
+		color:white;
+	}
+
 	
 	#B-Size-Contents{
 		overflow:hidden;
 		margin:0 auto;
-		width: 1000px;
+		width: 1440px;
+		max-width:100%;
 	}
-
+	
+	
 	#B-Button{
 		float:right;
 		width:90px;
@@ -51,66 +79,149 @@ font-family: 'Montserrat', sans-serif;
 		background-color:white;
 	}
 
+	#Left-B{
+		float:left;
+		width:48%;
+	}
+	#Right-B{
+		float:right;
+		width:49%;
+	}
 
 	#BT-Master-Permanent-Makeup{
-		margin:200px auto 0 auto;
+		width: 566px;
+		height: 324px;
+		margin-top: 100px;
 		overflow:hidden;
-		text-align: center;
 	}
 	
-	.T-Master{
-	text-shadow: -0   -1px 0   #000000,
-     0   -1px 0   #000000,
-    -0    1px 0   #000000,
-     0    1px 0   #000000,
-    -1px -0   0   #000000,
-     1px -0   0   #000000,
-    -1px  0   0   #000000,
-     1px  0   0   #000000,
-    -1px -1px 0   #000000,
-     1px -1px 0   #000000,
-    -1px  1px 0   #000000,
-     1px  1px 0   #000000,
-    -1px -1px 0   #000000,
-     1px -1px 0   #000000,
-    -1px  1px 0   #000000,
-     1px  1px 0   #000000;
-	color:white;
-	font-style: normal;
-	font-weight: 900;
-	font-size: 79.2px;  /*коэфф 2.2*/
-	line-height: 44px;
-	text-align: center;
-	letter-spacing: 0.195em;
-	margin-bottom:70px;
-}
-.T-Permanent-Makeup{
-	text-shadow: -0   -1px 0   #000000,
-     0   -1px 0   #000000,
-    -0    1px 0   #000000,
-     0    1px 0   #000000,
-    -1px -0   0   #000000,
-     1px -0   0   #000000,
-    -1px  0   0   #000000,
-     1px  0   0   #000000,
-    -1px -1px 0   #000000,
-     1px -1px 0   #000000,
-    -1px  1px 0   #000000,
-     1px  1px 0   #000000,
-    -1px -1px 0   #000000,
-     1px -1px 0   #000000,
-    -1px  1px 0   #000000,
-     1px  1px 0   #000000;
-	color:white;
-	font-style: normal;
-	font-weight: 400;
-	font-size:46px;
-	line-height: 24px;
-	text-align: center;
-	letter-spacing: 0.4em;
-}
 	
-/**/
+	.T-Master-Permanent-Makeup{
+		font-style: normal;
+		font-weight: 800;
+		font-size: 54px;
+		line-height: 59px;
+		letter-spacing: 0.01em;
+		color:white;
+	}
+	.master-png{
+		float:right;
+		margin-bottom:-5px;
+	}
+	
+	#BR{
+		box-sizing: border-box;
+		width: 471px;
+		height: 471px;
+		float:right;
+		margin-right:43px;
+		margin-top:-620px;
+		border: 15px solid rgba(255, 255, 255, 0.98);
+		filter: blur(61.5px);
+	}
+	
+	
+	@media(max-width:1200px){
+		.T-Master-Permanent-Makeup{font-size:48px;}
+		.master-png{width:480px;}
+		#BR{
+			width: 440px;
+			height: 440px;
+			margin-top:-570px;
+			margin-right:38px;
+		}
+	}
+	
+	.mobile{
+		display:none;
+	}
+	
+	
+	
+	
+@media(max-width:1000px){
+	#Navigation{display:none;}
+	#B-Master-Permanent-Makeup{
+		width:600px;
+		min-width:100%;
+	}
+	#B-Size-Contents{
+	}
+	
+
+	#BT-Master-Permanent-Makeup{
+		text-align:center;
+		margin:200px auto 0 auto;
+		width:90%;
+	}
+	.T-Master-Permanent-Makeup{display:none;}
+	#Right-B{
+		width:100%;
+	}
+	#Left-B{
+		width:100%;
+	}
+	.master-png{	
+		margin-right: 21.6%;
+	}
+	#BR{
+		margin-right: 26.4%;
+	}
+	
+	.mobile{
+		display:block;
+	}
+	.T-Master{
+		font-weight: 900;
+		font-size: 78px;
+		line-height: 80px;
+		text-align: center;
+		letter-spacing: 0.195em;
+		color:white;
+		text-shadow: -0   -1px 0   #000000,
+		 0   -1px 0   #000000,
+		-0    1px 0   #000000,
+		 0    1px 0   #000000,
+		-1px -0   0   #000000,
+		 1px -0   0   #000000,
+		-1px  0   0   #000000,
+		 1px  0   0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000;
+	}
+	.T-Permanent-Makeup{
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 24px;
+		text-align: center;
+		letter-spacing: 0.4em;
+		color:white;text-shadow: -0   -1px 0   #000000,
+		 0   -1px 0   #000000,
+		-0    1px 0   #000000,
+		 0    1px 0   #000000,
+		-1px -0   0   #000000,
+		 1px -0   0   #000000,
+		-1px  0   0   #000000,
+		 1px  0   0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000;
+	}
+
+
+}
+
 
 
 /*  Catalog  */
@@ -134,7 +245,7 @@ font-family: 'Montserrat', sans-serif;
 		background-color:#1A1A1A;
 		border-radius: 36px;
 	}
-	/*  IMG1.1  */
+	/*  IMG1.1 
 		.red_pres_img{
 			margin-top:70px;
 			margin-left:560px;
@@ -145,7 +256,6 @@ font-family: 'Montserrat', sans-serif;
 		}
 	/**/
 	
-
 	
 /**/
 
