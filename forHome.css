@@ -25,7 +25,6 @@ font-family: 'Montserrat', sans-serif;
 		background: radial-gradient(63.16% 110.39% at 25.49% 50.07%, #3D2E20 0%, #14110E 65.59%);
 		
 		width:100%;
-		margin:0 auto;
 	}
 
 	#Navigation{
@@ -33,7 +32,6 @@ font-family: 'Montserrat', sans-serif;
 		height:40x;
 		margin: 40px auto 0 auto;
 		text-align:center;
-		font-family: 'Montserrat', sans-serif;
 		font-weight:200;
 	}
 	.nav a{
@@ -52,6 +50,115 @@ font-family: 'Montserrat', sans-serif;
 		margin:0 auto;
 		width: 1440px;
 		max-width:100%;
+	}
+	
+	
+	
+
+	#Left-B{
+		float:left;
+		width:48%;
+		height:640px;
+	}
+	#Right-B{
+		float:right;
+		width:49%;
+	}
+
+	#BT-Master-Permanent-Makeup{
+		width: 566px;
+		height: 324px;
+		margin-top: 100px;
+		overflow:hidden;
+	}
+	
+	
+	.T-Master-Permanent-Makeup{
+		font-style: normal;
+		font-weight: 800;
+		font-size: 54px;
+		line-height: 59px;
+		letter-spacing: 0.01em;
+		color:white;
+	}
+	#IMG-Master{
+		text-align:right;
+	}
+	.master-png{
+		margin-bottom:-5px;
+	}
+	#BR1{
+		float:right;
+		box-sizing: border-box;
+		width: 471px;
+		height: 471px;
+		margin-right:43px;
+		margin-top:-620px;
+		border: 15px solid rgba(255, 255, 255, 0.98);
+		filter: blur(61.5px);
+	}
+	
+	
+	@media(max-width:1200px){
+		.T-Master-Permanent-Makeup{font-size:48px;}
+		.master-png{width:480px;}
+		#BR1{
+			width: 440px;
+			height: 440px;
+			margin-top:-570px;
+			margin-right:38px;
+		}
+	}
+	
+	.mobile{
+		display:none;
+	}
+	
+	
+@media(max-width:1000px){
+	#Navigation{display:none;}
+	#B-Master-Permanent-Makeup{
+		width:600px;
+		min-width:100%;
+	}
+	#B-Size-Contents{
+		
+	}
+	
+	#BT-Master-Permanent-Makeup{
+		margin:200px auto 0 auto;
+		width:90%;
+	}
+	.T-Master-Permanent-Makeup{
+		text-align:center;
+		margin:0 auto;
+		width:80%;
+	}
+	#Right-B{
+		width:100%;
+	}
+	#Left-B{
+		width:100%;
+	}
+	#IMG-Master{
+		text-align:center;
+	}
+	.master-png{
+		height:100%;
+	}
+
+	#BR1{	
+		display:none;
+	}
+	#BR2{
+		box-sizing: border-box;
+		width: 471px;
+		height: 471px;
+		margin:0 auto;
+		
+		margin-top:-620px;
+		border: 15px solid rgba(255, 255, 255, 0.98);
+		filter: blur(61.5px);
 	}
 	
 	
@@ -77,146 +184,6 @@ font-family: 'Montserrat', sans-serif;
 		height:8px;
 		margin-top:6px;
 		background-color:white;
-	}
-
-	#Left-B{
-		float:left;
-		width:48%;
-	}
-	#Right-B{
-		float:right;
-		width:49%;
-	}
-
-	#BT-Master-Permanent-Makeup{
-		width: 566px;
-		height: 324px;
-		margin-top: 100px;
-		overflow:hidden;
-	}
-	
-	
-	.T-Master-Permanent-Makeup{
-		font-style: normal;
-		font-weight: 800;
-		font-size: 54px;
-		line-height: 59px;
-		letter-spacing: 0.01em;
-		color:white;
-	}
-	.master-png{
-		float:right;
-		margin-bottom:-5px;
-	}
-	
-	#BR{
-		box-sizing: border-box;
-		width: 471px;
-		height: 471px;
-		float:right;
-		margin-right:43px;
-		margin-top:-620px;
-		border: 15px solid rgba(255, 255, 255, 0.98);
-		filter: blur(61.5px);
-	}
-	
-	
-	@media(max-width:1200px){
-		.T-Master-Permanent-Makeup{font-size:48px;}
-		.master-png{width:480px;}
-		#BR{
-			width: 440px;
-			height: 440px;
-			margin-top:-570px;
-			margin-right:38px;
-		}
-	}
-	
-	.mobile{
-		display:none;
-	}
-	
-	
-	
-	
-@media(max-width:1000px){
-	#Navigation{display:none;}
-	#B-Master-Permanent-Makeup{
-		width:600px;
-		min-width:100%;
-	}
-	#B-Size-Contents{
-	}
-	
-
-	#BT-Master-Permanent-Makeup{
-		text-align:center;
-		margin:200px auto 0 auto;
-		width:90%;
-	}
-	.T-Master-Permanent-Makeup{display:none;}
-	#Right-B{
-		width:100%;
-	}
-	#Left-B{
-		width:100%;
-	}
-	.master-png{	
-		margin-right: 21.6%;
-	}
-	#BR{
-		margin-right: 26.4%;
-	}
-	
-	.mobile{
-		display:block;
-	}
-	.T-Master{
-		font-weight: 900;
-		font-size: 78px;
-		line-height: 80px;
-		text-align: center;
-		letter-spacing: 0.195em;
-		color:white;
-		text-shadow: -0   -1px 0   #000000,
-		 0   -1px 0   #000000,
-		-0    1px 0   #000000,
-		 0    1px 0   #000000,
-		-1px -0   0   #000000,
-		 1px -0   0   #000000,
-		-1px  0   0   #000000,
-		 1px  0   0   #000000,
-		-1px -1px 0   #000000,
-		 1px -1px 0   #000000,
-		-1px  1px 0   #000000,
-		 1px  1px 0   #000000,
-		-1px -1px 0   #000000,
-		 1px -1px 0   #000000,
-		-1px  1px 0   #000000,
-		 1px  1px 0   #000000;
-	}
-	.T-Permanent-Makeup{
-		font-weight: 400;
-		font-size: 40px;
-		line-height: 24px;
-		text-align: center;
-		letter-spacing: 0.4em;
-		color:white;text-shadow: -0   -1px 0   #000000,
-		 0   -1px 0   #000000,
-		-0    1px 0   #000000,
-		 0    1px 0   #000000,
-		-1px -0   0   #000000,
-		 1px -0   0   #000000,
-		-1px  0   0   #000000,
-		 1px  0   0   #000000,
-		-1px -1px 0   #000000,
-		 1px -1px 0   #000000,
-		-1px  1px 0   #000000,
-		 1px  1px 0   #000000,
-		-1px -1px 0   #000000,
-		 1px -1px 0   #000000,
-		-1px  1px 0   #000000,
-		 1px  1px 0   #000000;
 	}
 
 
