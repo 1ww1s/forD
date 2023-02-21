@@ -58,7 +58,6 @@ font-family: 'Montserrat', sans-serif;
 	#Left-B{
 		float:left;
 		width:48%;
-		height:640px;
 	}
 	#Right-B{
 		float:right;
@@ -139,12 +138,13 @@ font-family: 'Montserrat', sans-serif;
 	}
 	#Left-B{
 		width:100%;
+		height:640px;
 	}
 	#IMG-Master{
 		text-align:center;
 	}
 	.master-png{
-		height:100%;
+	
 	}
 
 	#BR1{	
