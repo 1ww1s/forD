@@ -115,7 +115,9 @@ font-family: 'Montserrat', sans-serif;
 	#IMG-Master{
 		text-align:right;
 	}
-
+	.master-png{
+		margin-bottom:-5px;
+	}
 	#BR1{
 		float:right;
 		box-sizing: border-box;
@@ -216,9 +218,9 @@ font-family: 'Montserrat', sans-serif;
 	}
 	
 	#B-Enroll{
-		margin: 90px 0 auto auto;
+		margin: 95px 0 auto auto;
 		text-align:center;
-		height:1000px;
+
 	}
 	.Enroll{
 		width:600px;
@@ -233,6 +235,7 @@ font-family: 'Montserrat', sans-serif;
 		width:80%;
 		font-size:30px;
 		line-height: 36px;
+		height:222px;
 	}
 
 
