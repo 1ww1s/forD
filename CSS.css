@@ -90,7 +90,7 @@ font-family: 'Montserrat', sans-serif;
 		margin-left:1.9vh;
 		font-style: normal;
 		font-weight: 800;
-		font-size: 7.3vh;
+		font-size: 7.2vh;
 		line-height: 8vh;
 		letter-spacing: 0.01em;
 		color:white;
@@ -131,19 +131,20 @@ font-family: 'Montserrat', sans-serif;
 	}
 	
 	#Left-B{
-		width:50%;
+		width:50vw;
 		height:90vh;
-
+		object-fit:cover;
 	}
 	
 	#IMG-Master{
 		height:100%;
 		width:100%;
-		overflow:hidden;
 		
 	}
 	.master-png{
-		height: 96%;
+		height:96%;
+		min-height: 10%;
+		min-width:10%;
 		margin-right:9.5vh;
 		margin-top:4.2vh;
 		position:relative;
@@ -171,7 +172,7 @@ font-family: 'Montserrat', sans-serif;
 
 
 
-@media   /*(max-aspect-ratio: 1.52),*/ (max-width:1000px){
+@media   (max-aspect-ratio: 3/2), (orientation: portrait){
 	#B-Navigation{display:none;}
 	.pk{display:none;}
 	.mobile{display:block;}
