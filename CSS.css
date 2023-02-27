@@ -151,7 +151,7 @@ font-family: 'Montserrat', sans-serif;
 
 
 
-@media   (max-aspect-ratio: 1.52){
+@media   (max-aspect-ratio: 1.52), (max-width:1000px){
 	#Navigation{display:none;}
 	.pk{display:none;}
 	.mobile{display:block;}
