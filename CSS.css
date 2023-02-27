@@ -35,15 +35,21 @@ font-family: 'Montserrat', sans-serif;
 	
 	#B-Size-Contents{
 		overflow:hidden;
-		margin:0 auto;
-		width:100%;	 
+		margin:0 auto;	 
 	}
 	
-	#Navigation{
+	#B-Navigation{
 		height:10vh;
-		width:90%;
-		margin: 0vh auto;
-		text-align:center;
+		
+	}
+	#Panel-Nav{
+		margin:0 auto;
+		max-width:200vh;
+	}
+	#B-A{
+		float:left;
+		width:60%;
+		text-align:right;
 	}
 	
 	.nav a{
@@ -51,10 +57,24 @@ font-family: 'Montserrat', sans-serif;
 		font-weight:200;
 		font-style: normal;
 		font-size: 2.3vh;
+		line-height: 2.5vh;  /* 4.65 */
 		color:white;
 		display:inline-block;
 		margin:5.6vh 3.2vh 0 3.2vh;
 	}
+	#Personal-Cabinet{
+		float:right; 
+		margin-right:12vh;
+		margin-top:5.6vh;
+	}
+	.P-C{
+		color: #FFFFFF;
+		font-size: 2.3vh;
+		line-height: 2.5vh; 
+		font-weight:600;	
+	}
+	
+	
 	
 	#Right-B{
 		float:right;
@@ -84,6 +104,7 @@ font-family: 'Montserrat', sans-serif;
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
 		font-size: 2.7vh;
+		line-height:3vh;
 		text-align: center;
 		color: #FFFFFF;
 		background: radial-gradient(43.99% 171.7% at 49.91% 49.78%, #FFBA91 0%, #D99369 73.72%);
@@ -110,38 +131,37 @@ font-family: 'Montserrat', sans-serif;
 	}
 	
 	#Left-B{
-		float:left;
 		width:50%;
 		height:90vh;
+
 	}
 	
 	#IMG-Master{
-		float:right;
 		height:100%;
-		width:80vh;
-		text-align:right;
+		width:100%;
+		overflow:hidden;
 		
 	}
 	.master-png{
-		height: 100%;
-		max-width:100%;
-		margin-right:8.5vh;
+		height: 96%;
+		margin-right:9.5vh;
 		margin-top:4.2vh;
+		position:relative;
 		z-index:1;
-		position: relative;
+		float:right;
 	}
 	#BR1{
-		float:right;
-		position: relative;
-		
+		position:relative;
+		z-index:0;
 		width: 53.5vh;
 		height: 53.5vh;
-		margin-top:-83vh;
+		float:right;
+		margin-top:-80vh;
 		margin-right:12.5vh;
 		border: 2vh solid rgba(255, 255, 255, 0.98);
 		
-		/*filter: blur(8.5vh);*/
-		z-index:0;	
+		filter: blur(8.5vh);
+		
 	}
 
 	
@@ -151,8 +171,8 @@ font-family: 'Montserrat', sans-serif;
 
 
 
-@media   (max-aspect-ratio: 1.52), (max-width:1000px){
-	#Navigation{display:none;}
+@media   /*(max-aspect-ratio: 1.52),*/ (max-width:1000px){
+	#B-Navigation{display:none;}
 	.pk{display:none;}
 	.mobile{display:block;}
 	
@@ -199,20 +219,19 @@ font-family: 'Montserrat', sans-serif;
 	}
 	#Right-B{
 		width:100%;
-		
+		float:left;
 	}
 	#Left-B{
 		width:100%;
 		height:100%;
-		background-color:blue;
+		float:left;
 	}
 	#IMG-Master{
 		text-align:center;
 		margin-top:5.7vh;
 		width:100%;
 		height:78vw;
-		
-		float:left;
+		margin:0vh auto;
 	}
 	.master-png{
 		height:90%;
