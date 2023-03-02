@@ -4,7 +4,7 @@
 <script src="library.js"></script>
  <link rel="stylesheet" type="text/css" media="all"  href="CSS.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,700,800,900" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Bebas Neue:100,200,300,700,800,900,1200" rel="stylesheet">
 
 <title>AAAAAA</title>
 
@@ -36,7 +36,7 @@
 									<a href="#">FAQ</a>
 									<a href="#">ОБО МНЕ</a>
 									<a href="#">ПРОДУКТЫ</a>	
-									<a>О ПРОФЕССИИ</a>
+									<a href="#B-About-Profession">О ПРОФЕССИИ</a>
 		
 									
 								</div>
@@ -68,11 +68,11 @@
 							<div id="BR1"></div>
 							<div id="BR2"></div>
 							<div class="mobile">
-							<div id = "B-Enroll">
-								<button class = "Enroll">ЗАПИСАТЬСЯ</button>
-								<div id ="BT2">*приобрети самую высокооплачиваемую профессию в бьюти-сфере с безграничными возможностями роста</div>
-							</div>	
-						</div>
+								<div id = "B-Enroll">
+									<button class = "Enroll">ЗАПИСАТЬСЯ</button>
+									<div id ="BT2">*приобрети самую высокооплачиваемую профессию в бьюти-сфере с безграничными возможностями роста</div>
+								</div>	
+							</div>
 						</div>
 						
 						
@@ -83,10 +83,54 @@
 				</div>	
 			<!--  -->
 			
+
 			
 			
-	
 			
+			<div id="B-Size-Contents">
+				<div  id="B-Profession">
+					<div id="B-About-Profession">
+						<div class="T-About-Profession">
+							О ПРОФЕССИИ
+						</div>
+					</div>
+					
+					<div id="BT-Opportunities">	
+						<div id="B-size2">
+							<div class="This-Opportunity">Это возможность:</div>
+						</div>
+						
+						<div class="Opportunities">
+							<div class="t1">Создать <font class="color2">собственный бизнес</font> с нуля</div>
+							<div class="t2">Строить свой график работы <font class="color2">самостоятельно</font><br></div>
+						 	<div class="t3">Участвовать в чемпионатах<br> и конференциях<br></div>
+						 	<div class="t4"><font class="color2">Развития</font> без границ<br> </div>
+						 	<div class="t5">Стать владельцем своей<br><font class="color2">собственной студии</font><br></div>
+						 	<div class="t6">Зарабатывать <font class="color2">от 100.000</font><br> рублей в месяц</div>
+						</div>
+						
+						<div id="B-Points">
+							<div class="p1"></div>
+							<div class="p2"></div>
+							<div class="p3"></div>
+							<div class="p4"></div>
+							<div class="p5"></div>
+							<div class="p6"></div>
+							<div class="Rectangle"></div>
+						</div>
+					</div>
+
+					<div id="B-IMG-B-P">
+						<img class = "IMG-B-P" src = "img/block2.png">
+						<div id="B-Blur2"></div>
+					</div>		
+					
+			
+			</div>
+			<div id="B-Size-Contents">
+				<div id="Block3">
+				</div>
+			</div>
 			
 			
 			
@@ -94,7 +138,7 @@
 			
 			<div id="B-Size-Contents">
 			
-				<div id="BT-Course-Catalog">
+				<div  id="BT-Course-Catalog">
 					<h1 class="T-Course-Catalog">Каталог курсов</h1>
 				</div>	
 				
@@ -122,6 +166,48 @@
 
 
 <script>
+
+/*
+
+	const div = document.getElementById('B-About-Profession');
+	
+	
+	const options = {
+	    root: null,
+	    rootMargin: '0px',
+	  	threshold: 0.5
+	}
+	
+	
+
+	
+
+	const observer = new IntersectionObserver((entries, observer) => {
+        // для каждой записи-целевого элемента
+        entries.forEach(entry => {
+            // если элемент является наблюдаемым
+            if (entry.isIntersecting) {
+                const lazyImg = entry.target;
+                // выводим информацию в консоль - проверка работоспособности наблюдателя
+                console.log(lazyImg);
+              
+				
+				div.scrollIntoView();
+            }
+        })
+    }, options)
+
+	// наблюдатель	
+	
+	
+	const arr = document.querySelectorAll('.DD')  наблюдаемый
+    arr.forEach(i => {
+        observer.observe(i)
+    })
+	
+*/
+
+
 	/*alert(window.innerHeight);
 	alert(window.innerWidth);*/
 </script>
@@ -129,5 +215,6 @@
 
 
 </script>
+
 </body>
 </html>	
