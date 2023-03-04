@@ -2,7 +2,7 @@
 <html>
 <head>
 <script src="library.js"></script>
- <link rel="stylesheet" type="text/css" media="all"  href="CSS.css">
+ <link rel="stylesheet" type="text/css" media="all"  href="forHome(4).css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,700,800,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Bebas Neue:100,200,300,700,800,900,1200" rel="stylesheet">
 
@@ -20,16 +20,32 @@
 					
 					<div id ="B-Size-Contents">
 						
-						<div id="B-Button">		
+						<div class = "bt" id="B-Button">		
 							<div id="Button1">
 							</div>
 							<div id="Button2">
 							</div>
 							<div id="Button3">
 							</div>
-						</div>		
+						</div>	
+						<nav class="menu">
+							
+							<div id = "B-Side-Panel">
+								Здесь<br>
+								все<br>
+								что<br>
+								угодно<br>
+								вашей<br>
+								душе
+							</div>
+	
+						</nav>
+						
+						
+						
 						
 						<div id ="B-Navigation">
+							
 							<div id = "Panel-Nav" class= "nav" href="#">
 								<div id = "B-A">
 									<!-- обратный порядок -->
@@ -40,7 +56,20 @@
 		
 									
 								</div>
-							<div id = "Personal-Cabinet" class="P-C">ЛИЧНЫЙ КАБИНЕТ</div>
+							<div id = "Personal-Cabinet" class="P-C">
+								
+								ЛИЧНЫЙ КАБИНЕТ
+							</div>
+							<div id="human">
+									<div id="circle"><div id="human-head"></div></div>
+									
+									
+									<div id="human-body"></div>
+								</div>
+							
+							
+							
+							
 							</div>
 						</div>					
 						
@@ -88,7 +117,7 @@
 			
 			
 			<div id="B-Size-Contents">
-				<div  id="B-Profession">
+				<div id="B-Profession">
 					<div id="B-About-Profession">
 						<div class="T-About-Profession">
 							О ПРОФЕССИИ
@@ -100,6 +129,15 @@
 							<div class="This-Opportunity">Это возможность:</div>
 						</div>
 						
+						<div class ="mobile" id="B-Points">
+							<div class="p1"></div>
+							<div class="p2"></div>
+							<div class="p3"></div>
+							<div class="p4"></div>
+							<div class="p5"></div>
+							<div class="p6"></div>
+							<div class="Rectangle"></div>
+						</div>
 						<div class="Opportunities">
 							<div class="t1">Создать <font class="color2">собственный бизнес</font> с нуля</div>
 							<div class="t2">Строить свой график работы <font class="color2">самостоятельно</font><br></div>
@@ -109,7 +147,7 @@
 						 	<div class="t6">Зарабатывать <font class="color2">от 100.000</font><br> рублей в месяц</div>
 						</div>
 						
-						<div id="B-Points">
+						<div  class="pk" id="B-Points">
 							<div class="p1"></div>
 							<div class="p2"></div>
 							<div class="p3"></div>
@@ -125,12 +163,14 @@
 						<div id="B-Blur2"></div>
 					</div>		
 					
-			
-			</div>
-			<div id="B-Size-Contents">
-				<div id="Block3">
 				</div>
+			
+				
+			<div  id="Block3">
+		
+				
 			</div>
+			
 			
 			
 			
@@ -163,19 +203,107 @@
 			
 		</div>
 
-
+					
+		
+		
 
 <script>
 
+
+	const b1 = document.querySelector('#Button1');
+	const b2 = document.querySelector('#Button2');
+	const b3 = document.querySelector('#Button3');
+	
+	const btn = document.querySelector('.bt');
+	const B_AP = document.querySelector('#B-About-Profession');
+	
+	
+	
+	// const div = document.getElementById('B-Button');
+		
+	
+	
+	setTimeout(function P(){ 
+		H_B_AP = B_AP.getBoundingClientRect().top;
+		H_btn = btn.getBoundingClientRect().top
+		const H = window.innerHeight;
+		const W =  window.innerWidth;
+		if(menu.classList.contains('open')){
+			b1.style.backgroundColor = 'white';
+			b2.style.backgroundColor = 'white';
+			b3.style.backgroundColor = 'white';
+		}
+		else{
+			if(H_B_AP < H_btn  && H_B_AP + H > H_btn  ){
+				b1.style.backgroundColor = '#15120F';
+			}
+			else{
+				b1.style.backgroundColor = 'white';
+			}
+			if(H_B_AP < H_btn +	W/100 && H_B_AP + H > H_btn + W/60){
+				b2.style.backgroundColor = '#15120F';
+			}
+			else{
+				b2.style.backgroundColor = 'white';
+			}
+			if(H_B_AP < (H_btn  + W/40) && H_B_AP + H > H_btn + W/35){
+				b3.style.backgroundColor = '#15120F';
+			}
+			else{
+				b3.style.backgroundColor = 'white';
+			}
+		}
+		setTimeout(P);
+	});
+	
+	
+	
+	
+	
+	
+	const btnMenu = document.querySelector('.bt');
+	const menu = document.querySelector('.menu');
+	
+	// const darken = document.querySelector('.darken');
+	
+	const toggleMenu = function() {
+	    menu.classList.toggle('open');
+	    
+		// darken.classList.toggle('open');
+	}
+	
+	btnMenu.addEventListener('click', function(e) {  
+	    e.stopPropagation();
+	    toggleMenu();
+	});
+	
+	document.addEventListener('click', function(e) {
+	    const target = e.target;
+	    
+	    const its_menu = target == menu || menu.contains(target);
+	    const its_btnMenu = (target == btnMenu);
+	    const menu_is_active = menu.classList.contains('open');
+	    
+	    
+	    if (!its_menu && !its_btnMenu && menu_is_active) {
+	        toggleMenu();
+	    }
+		
+	});
+
+	
+	
+
 /*
 
-	const div = document.getElementById('B-About-Profession');
+	const div = document.getElementById('B-Button');
 	
+	let pxh = window.innerHeight;
 	
 	const options = {
 	    root: null,
-	    rootMargin: '0px',
-	  	threshold: 0.5
+	    rootMargin: `-${pxh+pxh/25}px 0px ${pxh/8}px 0px`,
+        threshold: 0,
 	}
 	
 	
@@ -186,26 +314,30 @@
         // для каждой записи-целевого элемента
         entries.forEach(entry => {
             // если элемент является наблюдаемым
+            
             if (entry.isIntersecting) {
                 const lazyImg = entry.target;
                 // выводим информацию в консоль - проверка работоспособности наблюдателя
                 console.log(lazyImg);
               
 				
-				div.scrollIntoView();
+				div.style.backgroundColor = 'red';
             }
+           	else {
+				div.style.backgroundColor = 'blue';
+			}
         })
     }, options)
 
 	// наблюдатель	
 	
 	
-	const arr = document.querySelectorAll('.DD')  наблюдаемый
+	const arr = document.querySelectorAll('#Block3') // наблюдаемый
     arr.forEach(i => {
         observer.observe(i)
     })
 	
-*/
+
 
 
 	/*alert(window.innerHeight);
