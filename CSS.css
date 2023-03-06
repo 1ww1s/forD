@@ -41,7 +41,7 @@ font-family: 'Montserrat';
 	
 	#B-Size-Contents{
 		overflow:hidden;
-		width:100vw;		
+		width:100%;		
 	}
 	
 	#B-Navigation{
@@ -244,7 +244,7 @@ font-family: 'Montserrat';
 	}
 	#BT-Opportunities{
 		position:relative;
-		overflow:hidden;
+		overflow:visible;
 		min-height:100vh;
 		z-index:10;
 		width:50%;
@@ -282,8 +282,8 @@ font-family: 'Montserrat';
 		margin-top:4vh;
 		margin-left:1.4vh;
 		float:right;
-		width:90vh;
-		margin-right:-18vh;
+		width:80vh;
+		margin-right:-13vh;
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 400;
@@ -291,6 +291,7 @@ font-family: 'Montserrat';
 		line-height: 5vh;
 		letter-spacing: 0.03em;
 		color: #3E3E3E;
+		overflow:visible;
 	}
 	.t1{
 		
@@ -362,7 +363,7 @@ font-family: 'Montserrat';
 		min-width:60vw;
 		object-fit:cover;
 	}
-	#B-Blur2{
+	#B-Blur2-1{
 		height:300vh;
 		width:355vw;
 		margin-left:-300vw;
@@ -372,7 +373,17 @@ font-family: 'Montserrat';
 		position:relative;
 		z-index:0;
 	}
-	
+	#B-Blur2-2{
+		position:relative;
+		z-index:0;
+		height:90vh;
+		width:12.5vw;
+		
+		margin-left:30vw;
+		background-color:white;
+		margin-top:-130vh;
+		filter: blur(15vh);
+	}
 	#Block3{
 		height:100vh;
 		width:100%;
@@ -387,17 +398,17 @@ font-family: 'Montserrat';
 	.menu{
 		display:none;
 	}
-/*@media   (max-aspect-ratio: 148/92){  
+@media   (max-aspect-ratio: 155/92){  
 	#B-IMG-B-P{
 		text-align:left;
 	}
 	.IMG-B-P{
-		height:135vh;
+		
 		min-width:60vw;
 		object-fit:cover;
-		margin-left:27vh; 
+		margin-left:42vh; 
 	}
-}*/
+}
 
 @media   (max-aspect-ratio: 3/2), (orientation: portrait){
 	#B-Navigation{display:none;}
