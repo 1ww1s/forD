@@ -451,7 +451,7 @@ font-family: 'Montserrat';
 	}
 	.darken{
 			width:100%;
-			height:100%;
+			height:100vh;
 			opacity:0;
 			position:fixed;
 			z-index:100;
