@@ -4,12 +4,17 @@ html, body{
 margin: 0;
 padding: 0;
 font-family: 'Montserrat';
- height: 100%;
+ 
   scroll-behavior: smooth;
 }
 
 
-	
+	#body-wrapper{
+		overflow:hidden;
+		width:100%;
+		
+		position:relative;
+	}
 
 	#B-Master-Permanent-Makeup{
 		background:linear-gradient(
@@ -36,7 +41,7 @@ font-family: 'Montserrat';
 	
 	#B-Size-Contents{
 		overflow:hidden;
-		margin:0 auto;	
+		width:100vw;		
 	}
 	
 	#B-Navigation{
@@ -212,7 +217,6 @@ font-family: 'Montserrat';
 	
 	#B-Profession{
 		width:100%;
-		height:128vh;
 	}
 	
 	@font-face {
@@ -223,15 +227,16 @@ font-family: 'Montserrat';
 	}
 	#B-About-Profession{
 		width:50%;
-		height:20vh;
+		height:12vh;
+		overflow:hidden;
 		z-index:10;
 		position:relative;
 		margin-top:3vh;
 	}
 	.T-About-Profession{	
 		font-family: 'Bebas Neue';
-		font-size: 12vh;
-		line-height: 20vh;
+		font-size: 11vh;
+		line-height: 16vh;
 		color: #3E3833;
 		height:20vh;
 		width:74vh;
@@ -239,7 +244,8 @@ font-family: 'Montserrat';
 	}
 	#BT-Opportunities{
 		position:relative;
-		height:100vh;
+		overflow:hidden;
+		min-height:100vh;
 		z-index:10;
 		width:50%;
 	}
@@ -260,7 +266,7 @@ font-family: 'Montserrat';
 		height:10vh;
 		
 		font-family: 'jikharev';
-		font-size: 10vh;
+		font-size: 9vh;
 		line-height: 12vh;
 		letter-spacing: 0.03em;
 	
@@ -272,19 +278,22 @@ font-family: 'Montserrat';
 
 	}
 
-	.Opportunities{
+	#Opportunities{
 		margin-top:4vh;
 		margin-left:1.4vh;
 		float:right;
-		width:85vh;
+		width:90vh;
 		margin-right:-18vh;
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 400;
-		font-size: 4vh;
+		font-size: 3.5vh;
 		line-height: 5vh;
 		letter-spacing: 0.03em;
 		color: #3E3E3E;
+	}
+	.t1{
+		
 	}
 	.t2, .t3, .t4, .t5, .t6{
 		margin-top:3vh;
@@ -344,9 +353,9 @@ font-family: 'Montserrat';
 		float:right;
 		text-align:right;
 		position:relative;
-		margin-top:-130vh;
+		margin-top:-132vh;
 		width:100vw;
-		height:100%;
+		height:100%;		
 	}
 	.IMG-B-P{
 		height:135vh;
@@ -378,7 +387,7 @@ font-family: 'Montserrat';
 	.menu{
 		display:none;
 	}
-@media   (max-aspect-ratio: 148/92){  /* 154 */
+/*@media   (max-aspect-ratio: 148/92){  
 	#B-IMG-B-P{
 		text-align:left;
 	}
@@ -386,14 +395,104 @@ font-family: 'Montserrat';
 		height:135vh;
 		min-width:60vw;
 		object-fit:cover;
-		margin-left:27vh;  /* 33 */
+		margin-left:27vh; 
 	}
-}
+}*/
 
 @media   (max-aspect-ratio: 3/2), (orientation: portrait){
 	#B-Navigation{display:none;}
+	.skip {
+		display: none;
+	}
 	.pk{display:none;}
 	.mobile{display:block;}
+	
+	.burger-btn{
+		z-index:999;
+		position:fixed;
+		width:9vw;
+		height: 3.75vw;
+		right:0;
+		margin: 4vh 6vw 0 0;
+	}
+	
+	.burger-btn span{
+		display:block;
+		border-radius: 2vw;
+		height:0.85vw;
+		width:9vw;
+		background-color:white;
+		float:right;
+		transition: opacity .5s, transform .5s;
+	}
+
+	/* обычный бургер*/
+	.burger-btn span:nth-child(1){
+	}
+	.burger-btn span:nth-child(2){
+		margin-top:0.6vw;
+		width:5.45vw;
+		float:left;
+	}
+	.burger-btn span:nth-child(3){
+		margin-top:0.6vw;
+	}
+	.menu{
+		width: 40vw;
+		min-height:100vh;
+		
+		right:-40vw;
+		top:0;
+		background-color:blue;
+		position:fixed;
+		z-index:199;
+		display:block;
+		transition: transform 0.5s;
+	}
+	.darken{
+			width:100%;
+			height:100%;
+			opacity:0;
+			position:fixed;
+			z-index:100;
+			will-change: opacity;
+			transition: opacity 0.5s;
+		}
+	
+	
+	/* крестик при menu open */
+	
+		.Side-panel.open .burger-btn {
+			width:7vw;
+			height:5.5vw;
+		}
+		
+		.Side-panel.open .burger-btn span:nth-child(1){
+			transform: translateY(2.3vw) rotate(45deg);
+			width:7vw;
+		}
+		.Side-panel.open .burger-btn span:nth-child(2){
+			opacity: 0;
+			transform: translateY(1.45vw);
+		}
+		.Side-panel.open .burger-btn span:nth-child(3){
+			transform: translateY(-0.6vw) rotate(-45deg);
+			width:7vw;
+		}
+		
+		.Side-panel.open .menu{
+			transform: translateX(-100%);
+		}
+		
+		.Side-panel.open .darken{
+			opacity:0.5;
+			background-color:#111;
+		}
+		
+	/* end крестик */
+	
+	
+	
 	
 	#B-Master-Permanent-Makeup{
 		min-height:100vh;
@@ -402,31 +501,7 @@ font-family: 'Montserrat';
 		width:100%;
 		min-height:100vh;
 	}
-	#B-Button{
-		z-index:999;
-		position:fixed;
-		width:9vw;
-		right:0;
-		margin: 4vh 6vw 0 0;
-	}
-	#Button1{
-		border-radius: 2vw;
-		height:0.85vw;
-		background-color:white;
-	}
-	#Button2{
-		border-radius: 2vw;
-		height:0.85vw;
-		width:60%;
-		background-color:white;
-		margin-top:0.6vw;
-	}
-	#Button3{
-		border-radius: 2vw;
-		height:0.85vw;
-		margin-top:0.6vw;
-		background-color:white;
-	}
+	
 	#BT-Master-Permanent-Makeup{
 		margin: 11.4vh auto 0 auto;
 		width:100%;	
@@ -498,60 +573,140 @@ font-family: 'Montserrat';
 	
 	
 	#B-Profession{
-		height:100vh;
+		
+		min-height:100vh;
 		width:100%;
 	}
 	#B-About-Profession{
 		width:100%;
 		text-align:left;
 		margin-top:0vh;
+		height:16vw;
+		overflow:hidden;
+		position:relative;
 	}
 	.T-About-Profession{	
 		float:left;
+		font-size:10vw;
+		line-height:22vw;
+		margin-left:2vw;
 	}
+
+
 	#BT-Opportunities{
-		width:1000%;
+		width:100vw;
+		min-height:100vh;
+		overflow:hidden;
+		margin-top:0;
 	}
-	#B-size2{margin-top:0vh;}
+	#B-size2{
+		height:15vw;
+		width:100%;
+		margin-top:0;
+		float:left;
+	}
 	.This-Opportunity{
+		height:14vw;
+		width:100%;
+		font-size:9vw;
+		line-height:14vw;
 		float:left;
+		margin-left:2vw;
 	}
-	.Opportunities{
+	#Opportunities{
+		width:90%;
+		margin-top:0;
 		float:left;
-		
-	}
-	#B-Points{
-		float:left;		
+		padding:0vw;
 	}
 	
 
-	
-	.menu{
-		display:none;
-	}
-	
-	.menu.open{
-		display:block;
-		position:fixed;	
-		background-color:red;
-		width:40vw;
-		height:100%;
-		margin-left:90vh;
-		z-index:100;
-		top: 0;
-		right: 0;
-	}
-	
-	#B-Side-Panel{
+	.t1{
 		width:100%;
-		height:30vh;
+		font-size:4vw;
+		line-height:6vw;
+		margin-top:0;
+		float:left;
+	}
+	.t2, .t3, .t4, .t5, .t6{
+		width:100%;
+		font-size:4vw;
+		line-height:6vw;
+		float:left;
+		margin-top:2vw;
+	}
+	.color2{  /* Block Opportunities */
+		color: #786759;
+		font-weight: 700;
+	}
 	
+	
+	#B-Points{
+		width:2vw;
+		height:65vw;
+		float:right;
+		margin-top:0;
+	}
+	.p1, .p2, .p3, .p4, .p5, .p6{
+		background: #FFFFFF;
+		border: 0.5vw solid #786759;
+		box-shadow: 0px 0px 1.6vw #786759;
+		border-radius:100%;
+		width: 1.1vw;
+		height: 1.1vw;
+		position:absolute;
+		z-index:1;
+	}
+	.p1{
+		margin-top:1.8vw;
+	}
+	.p2{
+		margin-top:10vw;
+	}
+	.p3{
+		margin-top:23.8vw;
+	}
+	.p4{
+		margin-top:37.8vw;
+	}
+	.p5{
+		margin-top:45.9vw;
+	}
+	.p6{
+		margin-top:59.8vw;
+	}
+	
+	.Rectangle{
+		background: #D9D9D9;
+		width:0.5vw;
+		height:60vw;
+		position:relative;
+		z-index:0;
+		margin:2vw auto 0 auto;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#B-Points{
+		margin-left:3vw;
+		float:left;		
+		margin-top:0;
 	}
 	
 	
 	#B-IMG-B-P{
-
-		display:none;   /*  !!!!!!  */
+		display:none;	
+	}
+	
+	
+	
+	#Block3{
 		
 	}
 	
@@ -563,13 +718,14 @@ font-family: 'Montserrat';
 	
 	
 	
-	
+}
 
-/*  Catalog  */
-	#BT-Course-Catalog{
-		margin:0 auto;
-		text-align:center;
-	}
+
+
+	
+/*  Catalog */
+
+
 
 	.T-Course-Catalog{
 		font-family: 'Montserrat', sans-serif;
