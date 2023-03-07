@@ -99,21 +99,22 @@ font-family: 'Montserrat';
 		border-radius: 30% 30% 0 0 / 60% 60% 0 0;
 		position:relative;
 	}
-	
+	.a-PC a{
+		margin:0;
+		font-size: 2.3vh;
+		line-height: 2.5vh; 
+		font-weight:600;
+		#FFFFFF;
+	}
 	#Personal-Cabinet{
+		
 		float:right; 
 		width:26vh;
 		margin-right:8vh;
 		margin-top:5.6vh;
-
 		text-align:right;
 	}
-	.P-C{
-		color: #FFFFFF;
-		font-size: 2.3vh;
-		line-height: 2.5vh; 
-		font-weight:600;
-	}
+
 
 	
 	#Right-B{
@@ -360,7 +361,7 @@ font-family: 'Montserrat';
 	}
 	.IMG-B-P{
 		height:135vh;
-		min-width:60vw;
+		width:60vw;
 		object-fit:cover;
 	}
 	#B-Blur2-1{
@@ -368,7 +369,7 @@ font-family: 'Montserrat';
 		width:355vw;
 		margin-left:-300vw;
 		background: white;
-		filter: blur(18vh);
+		filter: blur(12vh);
 		margin-top:-250vh;
 		position:relative;
 		z-index:0;
@@ -398,17 +399,7 @@ font-family: 'Montserrat';
 	.menu{
 		display:none;
 	}
-@media   (max-aspect-ratio: 155/92){  
-	#B-IMG-B-P{
-		text-align:left;
-	}
-	.IMG-B-P{
-		
-		min-width:60vw;
-		object-fit:cover;
-		margin-left:42vh; 
-	}
-}
+
 
 @media   (max-aspect-ratio: 3/2), (orientation: portrait){
 	#B-Navigation{display:none;}
@@ -434,7 +425,7 @@ font-family: 'Montserrat';
 		width:9vw;
 		background-color:white;
 		float:right;
-		transition: opacity .5s, transform .5s;
+		transition: opacity .5s, transform .5s; 
 	}
 
 	/* обычный бургер*/
@@ -443,16 +434,16 @@ font-family: 'Montserrat';
 	.burger-btn span:nth-child(2){
 		margin-top:0.6vw;
 		width:5.45vw;
-		float:left;
+		float:left;		
 	}
 	.burger-btn span:nth-child(3){
 		margin-top:0.6vw;
 	}
 	.menu{
-		width: 40vw;
+		width: 45vw;
 		min-height:100vh;
 		
-		right:-40vw;
+		right:-45vw;
 		top:0;
 		background-color:blue;
 		position:fixed;
@@ -472,23 +463,22 @@ font-family: 'Montserrat';
 	
 	
 	/* крестик при menu open */
-	
+		
 		.Side-panel.open .burger-btn {
-			width:7vw;
-			height:5.5vw;
+			
+			height:10vw;
 		}
 		
 		.Side-panel.open .burger-btn span:nth-child(1){
-			transform: translateY(2.3vw) rotate(45deg);
-			width:7vw;
+			transform: translateY(1.45vw) rotate(45deg);
+		
 		}
 		.Side-panel.open .burger-btn span:nth-child(2){
 			opacity: 0;
-			transform: translateY(1.45vw);
+			
 		}
 		.Side-panel.open .burger-btn span:nth-child(3){
-			transform: translateY(-0.6vw) rotate(-45deg);
-			width:7vw;
+			transform: translateY(-1.5vw) rotate(-45deg);
 		}
 		
 		.Side-panel.open .menu{
@@ -565,15 +555,15 @@ font-family: 'Montserrat';
 		margin-top:17vw;
 	}
 	.Enroll{
-		margin-left:0vh;
 		margin-top:0px;
+		margin-left:0vh;
 		width:62vw;
 		height:12vw;
-		transform: matrix(1, 0.02, -0.02, 1, 0, 0);
-		border-radius: 5.5vw;
+		border-radius: 10% 10% 10% 10% / 20vw 20vw 20vw 20vw;  /*  горизонтальные / вертикальные  */
 		font-size:4.5vw;
 		position:relative;
 		z-index:10;
+		
 	}
 	#BT2{
 		margin:6vh auto 0 auto;
@@ -584,7 +574,6 @@ font-family: 'Montserrat';
 	
 	
 	#B-Profession{
-		
 		min-height:100vh;
 		width:100%;
 	}
@@ -609,6 +598,7 @@ font-family: 'Montserrat';
 		min-height:100vh;
 		overflow:hidden;
 		margin-top:0;
+		
 	}
 	#B-size2{
 		height:15vw;
