@@ -3,7 +3,7 @@
 <head>
 <script src="library.js"></script>
  <link rel="stylesheet" type="text/css" media="all"  href="CSS.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,700,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,500,700,800,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Bebas Neue:100,200,300,700,800,900,1200" rel="stylesheet">
 
 <title>AAAAAA</title>
@@ -29,15 +29,15 @@
 						
 							<nav class= "menu">
 							
-							
-								
-									Здесь<br>
-									все<br>
-									что<br>
-									угодно<br>
-									вашей<br>
-									душе<br><br><br><br>
-									Надо светлый фон на меню, т.к. слева затемнен фон	
+								<div id="B-border-menu"></div>
+								<div class = "nav" id = "B-A">
+									<!-- обратный порядок -->
+									<a href="#B-About-Profession">О ПРОФЕССИИ</a><br>
+									<a href="#">ПРОДУКТЫ</a>	
+									<a href="#">ОБО МНЕ</a>	
+									<a href="#">FAQ</a>
+									
+								</div>
 		
 							</nav>
 						</header>
@@ -259,12 +259,7 @@
 			}
 		}
 		setTimeout(P);
-	});
-	
-	
-	
-	
-	
+	});	
 	
 	
 	const btnMenu = document.querySelector('.burger-btn');
@@ -276,11 +271,12 @@
 		menu.classList.toggle("open");
 		if(menu.classList.contains('open')){
 			setTimeout(()=>{
-				b1.style.backgroundColor = 'white';
-				b2.style.backgroundColor = 'white';
-				b3.style.backgroundColor = 'white';
+				b1.style.backgroundColor = '#5B4141';
+				b2.style.backgroundColor = '#5B4141';
+				b3.style.backgroundColor = '#5B4141';
 			},100);
 		}
+	
 		
 	}
 	
