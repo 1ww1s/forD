@@ -441,9 +441,9 @@ font-family: 'Montserrat';
 		margin-top:0.6vw;
 	}
 	.menu{
-		width: 45vw;
+		width: 50vw;
 		min-height:100vh;
-		right:-45vw;
+		right:-50vw;
 		top:0;
 		background-color:#AA8C8C;
 		position:fixed;
