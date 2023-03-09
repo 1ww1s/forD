@@ -494,7 +494,7 @@ font-family: 'Montserrat';
 	
 	#B-A{
 		float:left;
-		margin-top:calc(4vh);
+		margin-top:calc(2vw + 1vh);
 		height:50vh;
 		text-align:left;
 		width:100%;
@@ -503,8 +503,8 @@ font-family: 'Montserrat';
 	.nav a{
 		float:left;
 		color:black;
-		font-size:3vw;
-		margin-top:5vw;
+		font-size:4vw;
+		margin-top:6vw;
 		line-height:0;
 		font-weight:500;
 		width:100%;
@@ -512,7 +512,6 @@ font-family: 'Montserrat';
 	}
 	
 	a{
-		font-size:3vw;
 		line-height:0;
 	}
 	
