@@ -529,11 +529,10 @@ font-family: 'Montserrat';
 	
 	
 	#B-Master-Permanent-Makeup{
-		min-height:100vh;
+		min-height:95vh;
 	}
 	#B-Size-Contents{
 		width:100%;
-		min-height:100vh;
 	}
 	
 	#BT-Master-Permanent-Makeup{
@@ -562,7 +561,7 @@ font-family: 'Montserrat';
 		margin:0 auto;		
 	}
 	.master-png{
-		height:64vw;
+		height:70vw;
 		margin-top:0vh;
 		margin-right:0vh;
 	}
@@ -786,6 +785,3 @@ font-family: 'Montserrat';
 			position:absolute;
 		}
 	/**/
-	
-	
-/**/
