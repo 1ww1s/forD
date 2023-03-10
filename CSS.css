@@ -561,7 +561,7 @@ font-family: 'Montserrat';
 		margin:0 auto;		
 	}
 	.master-png{
-		height:70vw;
+		height:68vw;
 		margin-top:0vh;
 		margin-right:0vh;
 	}
@@ -570,9 +570,9 @@ font-family: 'Montserrat';
 	}
 	#BR2{
 		box-sizing: border-box;
-		width: 40vw;
-		height: 40vw;
-		margin:-58vw auto 0 auto;
+		width: 42vw;
+		height: 42vw;
+		margin:-62vw auto 0 auto;
 		border: 1.6vw solid rgba(255, 255, 255, 0.98);
 		filter: blur(6.1vw);
 		position: relative;
