@@ -57,11 +57,14 @@ a{
 	z-index:-100;
 	position:absolute;
 	border-radius: 100%;
-	filter: blur(24vh);
 	-webkit-backface-visibility: hidden;
--moz-backface-visibility: hidden;
--webkit-transform: translate3d(0, 0, 0);
--moz-transform: translate3d(0, 0, 0);
+	-moz-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-webkit-filter: blur(24vh);
+   	-moz-filter: blur(24vh);
+   	-ms-filter: blur(24vh);
+   	 filter: blur(24vh);
 }
 #Right-B{
 	float:right;
