@@ -58,6 +58,10 @@ a{
 	position:absolute;
 	border-radius: 100%;
 	filter: blur(24vh);
+	-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
 }
 #Right-B{
 	float:right;
@@ -267,6 +271,10 @@ a{
 	position:relative;
 	margin: 0 auto;
 	margin:-10vh auto 0 auto;
+	-webkit-backface-visibility: hidden;
+-moz-backface-visibility: hidden;
+-webkit-transform: translate3d(0, 0, 0);
+-moz-transform: translate3d(0, 0, 0);
 }
 
 .roses{
