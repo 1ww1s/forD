@@ -1,0 +1,212 @@
+@import "https://fonts.fontstorage.com/import/bebasneue.css";
+
+html, body{
+margin: 0;
+padding: 0;
+font-family: 'Montserrat';
+ height:100vh;
+overflow:hidden;
+  scroll-behavior: smooth;
+}
+
+#background{
+	width:100%;
+	min-height:100vh;
+	background-color:#15120F;
+}
+#Left-B{
+	float:left;
+	min-width:50%;
+	height:100%;
+	text-align:right;
+	z-index:0;
+	position:absolute;
+}
+#IMG1{
+	width:100%;
+	height:100vh;
+	float:right;
+	position:relative;
+}
+
+.IMG1{
+	height:100%;
+}
+
+.roses{
+	position:absolute;
+	height:100%;
+	z-index:-99;
+	right:0;
+}
+
+#blur{
+	top:28vh;
+	right:23vh;
+	width:73vh;
+	height:73vh;
+	background: rgba(219, 149, 106, 0.64);
+	z-index:-100;
+	position:absolute;
+	border-radius: 100%;
+	filter: blur(24vh);
+}
+
+
+#Right-B{
+	float:right;
+	width:50%;
+	height:100%;
+	z-index:100;
+	position:relative;
+}
+#content{
+	max-width:90vh;
+	height:100%;
+}
+#B-title1{
+	padding-top:15vh;
+	width:96%;
+	text-align:center;
+	margin:0 auto;
+}
+.title1{
+	font-family: 'Bebas Neue'; 
+	color:#FFFFFF;
+	font-size:7.3vh;
+	letter-spacing: 0.115em;
+	font-weight: 200;
+	text-transform: uppercase;
+	z-index:100;
+}
+
+#B-login{
+	padding-top:8vh;
+	width:64%;
+	margin:0 auto;
+}
+#login{
+	width:100%;
+	border:0;
+	font-size:3vh;
+	padding:0;
+	float:left;
+	height:7vh;
+	font-family: 'Montserrat';
+	font-weight: 200;
+	border-radius:5vh;
+	outline:none;
+	padding-left:3vh;
+	margin-left:-1.5vh;
+}
+#B-password{
+	padding-top:10vh;
+	width:64%;
+	margin:0 auto;
+}
+#password{
+	width:100%;
+	border:0;
+	font-size:3vh;
+	padding:0;
+	float:left;
+	height:7vh;
+	font-family: 'Montserrat';
+	font-weight: 200;
+	border-radius:5vh;
+	outline:none;
+	padding-left:3vh;
+	margin-left:-1.5vh;
+}
+#B-Enroll{
+	text-align:center;
+}
+.Enroll{
+		width: 40vh;
+		height: 8.5vh;
+		margin-top:6vh;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 2.7vh;
+		text-align: center;
+		color: #FFFFFF;
+		background: radial-gradient(43.99% 171.7% at 49.91% 49.78%, #FFBA91 0%, #D99369 73.72%);
+		box-shadow: 0px 0.3vh 0px #A57253, 0px 0.3vh  6vh rgba(252, 180, 136, 0.55);
+		transform: matrix(1, 0, 0, 1, 0, 0);
+		top:1vh;
+		border-radius: 10% 10% 10% 10% / 15vh 15vh 15vh 15vh;  /*  горизонтальные / вертикальные  */
+		border:0;
+		position:relative;
+		cursor: pointer;
+	}
+#or{
+	width:100%;
+	height:7vh;
+	color:#9B9B9B;
+	font-weight:200;
+	text-align:center;
+	margin-top:	8vh;
+	font-size:2.4vh;
+}
+
+#or-left{
+	width:44%;
+	float:left;
+}
+#or-center{
+	width:12%;
+	float:left;
+}
+#or-right{
+	width:44%;
+	float:left;
+}
+
+.Line1{
+	margin-top:1.5vh;
+	width:45%;
+	float:right;
+}
+.line1_1{
+	width:50%;
+	height:0.1vh;
+	background: linear-gradient(90deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+	margin-left:50%;
+}
+.line1_2{
+	width:50%;
+	height:0.1vh;
+	background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, #D9D9D9 100%);
+	margin-top:-0.1vh;
+}
+
+.Line2{
+	width:45%;
+	margin-top:1.5vh;
+	float:left;
+}
+.line2_1{
+	width:50%;
+	height:0.1vh;
+	background: linear-gradient(90deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+	margin-left:50%;
+}
+.line2_2{
+	width:50%;
+	height:0.1vh;
+	background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, #D9D9D9 100%);
+	margin-top:-0.1vh;
+}
+
+.registration{
+	color:#FFCDAF;
+	font-size:2.7vh;
+	text-align:center;
+	font-weight:500;
+}
+
+.registration a{
+	text-decoration:none;
+	color:#FFCDAF;
+}
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="library.js"></script>
+ <link rel="stylesheet" type="text/css" media="all"  href="login.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,500,700,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bebas Neue:100,200,250,300,700,800,900,1200" rel="stylesheet">
+
+<title>AAAAAA</title>
+
+
+</head>
+<body>
+
+
+	<div id="body-wrapper">
+		<div id="background">
+			<div id="Left-B">
+				<div id="IMG1">
+					<img class="IMG1" src = "img1.png">
+				</div>
+				<img class="roses" src = "roses.png">
+				<div id="blur">
+				</div>
+			</div>	
+		
+			<div id ="Right-B">
+				<div id="content">
+					<div id = "B-title1" class="title1">
+						вход в личный кабинет
+					</div>
+					<div id="B-login">
+						<label for = "login">
+						<input id="login" type="text" placeholder="Логин...">   <!--  LOGIN   -->
+						</label>
+					</div>
+					<div id="B-password">
+						<label for = "password">
+						<input id="password" type="text" placeholder="Пароль...">     <!--  PASSWORD   -->
+						</label>
+					</div>
+					<div id = "B-Enroll">
+						<button type="text" onclick="sign_in()" class = "Enroll">ВОЙТИ</button>							
+					</div>
+					
+					<div id = "or">
+						
+						<div id = "or-left">
+							<div class = "Line1">
+								<div class="line1_1">
+								</div>
+								<div class="line1_2">
+								</div>
+							</div>
+						</div>
+						<div id = "or-center">ИЛИ</div>
+						<div id = "or-right">
+							<div class = "Line2">
+								<div class="line2_1">
+								</div>
+								<div class="line2_2">
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class = "registration">
+						<a href="http://localhost:8080/auth/sign-up/">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+		
+
+<script>
+
+
+	function sign_in() {
+    let login = document.querySelector('#login');
+    let password = document.querySelector('#password');
+    fetch("http://localhost:8080/auth/sign-in/", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({"login": login.value, "password": password.value})
+    })
+        .then(res => {
+            if (res.redirected) {
+                document.location = res.url
+            }
+        })
+}
+	
+	
+
+</script>
+
+
+
+
+</script>
+
+</body>
+</html>	
