@@ -57,7 +57,7 @@ a{
 	z-index:-100;
 	position:absolute;
 	border-radius: 100%;
-	filter: blur(24vh);
+	filter: blur(150px);
 }
 #Right-B{
 	float:right;
