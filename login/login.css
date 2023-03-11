@@ -4,11 +4,19 @@ html, body{
 margin: 0;
 padding: 0;
 font-family: 'Montserrat';
- height:100vh;
-overflow:hidden;
-  scroll-behavior: smooth;
+scroll-behavior: smooth;
+
 }
 
+a{
+	text-decoration:none;
+	-webkit-tap-highlight-color: transparent;
+ }
+#body-wrapper{
+	position:relative;
+	width:100%;
+	overflow:hidden;
+}
 #background{
 	width:100%;
 	min-height:100vh;
@@ -40,7 +48,7 @@ overflow:hidden;
 	right:0;
 }
 
-#blur{
+#blur2{
 	top:28vh;
 	right:23vh;
 	width:73vh;
@@ -51,8 +59,6 @@ overflow:hidden;
 	border-radius: 100%;
 	filter: blur(24vh);
 }
-
-
 #Right-B{
 	float:right;
 	width:50%;
@@ -60,7 +66,7 @@ overflow:hidden;
 	z-index:100;
 	position:relative;
 }
-#content{
+#content-pk{
 	max-width:90vh;
 	height:100%;
 }
@@ -137,7 +143,7 @@ overflow:hidden;
 		border-radius: 10% 10% 10% 10% / 15vh 15vh 15vh 15vh;  /*  горизонтальные / вертикальные  */
 		border:0;
 		position:relative;
-		cursor: pointer;
+		-webkit-tap-highlight-color: transparent;
 	}
 #or{
 	width:100%;
@@ -209,4 +215,125 @@ overflow:hidden;
 	text-decoration:none;
 	color:#FFCDAF;
 }
+.IMG2{
+	display:none;
+}
 
+@media(max-aspect-ratio:3/2){
+
+/*#blur1{
+	background: rgba(219, 149, 106, 0.64);
+	width:50%;
+	height:2vh;
+	right:5vh;
+	top:9vh;
+	filter:blur(3vh);
+	position:absolute;
+	z-index:101;
+}*/
+#content-mobile{
+	width:40vh;
+	height:90%;
+	position:relative;
+	margin:0 auto;
+}
+	
+#Left-B{
+	width:100%;
+	right:5vh;
+	height:50vh;
+	margin: 0 auto;
+	position:relative;
+}
+
+#IMG1{
+	margin-top:10vh;
+	width:100%;
+	text-align:center;
+	position:relative;
+}
+.IMG1{
+	display:none;
+}
+.IMG2{
+	display:block;
+	height:76vh;
+}
+#blur2{
+	right:0;
+	width:50vh;
+	height:50vh;
+	z-index:-100;
+	position:relative;
+	margin: 0 auto;
+	margin:-10vh auto 0 auto;
+}
+
+.roses{
+	display:none;
+}
+
+#Right-B{
+	width:100%;
+	width:50vh;
+	right:-5vh;
+}
+
+#B-title1{
+	padding-top:0;
+}
+.title1{
+	font-size:4vh;
+	letter-spacing: 0.115em;
+	font-weight: 300;
+}
+
+#B-login{
+	padding-top:2vh;
+	width:66%;
+	margin:0 auto;
+}
+#login{
+	font-size:2vh;
+	height:4.6vh;
+	padding-left:2vh;
+	margin-left:-1vh;
+}
+#B-password{
+	width:66%;
+	padding-top:6vh;
+}
+#password{
+	font-size:2vh;
+	float:left;
+	height:4.6vh;
+	padding-left:2vh;
+	margin-left:-1vh;
+}
+.Enroll{
+		width: 26vh;
+		height: 5.6vh;
+		margin-top:2.8vh;
+		font-size: 1.8vh;
+		border-radius: 15% 15% 15% 15% / 15vh 15vh 15vh 15vh;  /*  горизонтальные / вертикальные  */
+	}
+#or{
+	height:5vh;
+	margin-top:	4vh;
+	font-size:1.8vh;
+}
+
+
+
+.Line1{
+	width:45%;
+}
+
+.Line2{
+	margin-top:1vh;
+}
+
+.registration{
+	color:#FFCDAF;
+	font-size:1.8vh;
+}
