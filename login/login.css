@@ -20,7 +20,7 @@ a{
 #background{
 	width:100%;
 	min-height:100vh;
-	background-color:#15120F;
+	background-color: rgba(21, 18, 15, 100%);
 }
 #Left-B{
 	float:left;
@@ -57,15 +57,13 @@ a{
 	z-index:-100;
 	position:absolute;
 	border-radius: 100%;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);
 	-webkit-filter: blur(24vh);
-   	-moz-filter: blur(24vh);
-   	-ms-filter: blur(24vh);
-   	 filter: blur(24vh);
+	-moz-filter: blur(24vh);
+	-ms-filter: blur(24vh);
+    filter: blur(24vh);
 }
+
+
 #Right-B{
 	float:right;
 	width:50%;
@@ -228,33 +226,23 @@ a{
 
 @media(max-aspect-ratio:3/2){
 
-/*#blur1{
-	background: rgba(219, 149, 106, 0.64);
-	width:50%;
-	height:2vh;
-	right:5vh;
-	top:9vh;
-	filter:blur(3vh);
-	position:absolute;
-	z-index:101;
-}*/
 #content-mobile{
 	width:40vh;
 	height:90%;
 	position:relative;
 	margin:0 auto;
+
 }
 	
 #Left-B{
 	width:100%;
 	right:5vh;
-	height:50vh;
+	height:40vh;
 	margin: 0 auto;
 	position:relative;
 }
 
 #IMG1{
-	margin-top:10vh;
 	width:100%;
 	text-align:center;
 	position:relative;
@@ -273,11 +261,7 @@ a{
 	z-index:-100;
 	position:relative;
 	margin: 0 auto;
-	margin:-10vh auto 0 auto;
-	-webkit-backface-visibility: hidden;
--moz-backface-visibility: hidden;
--webkit-transform: translate3d(0, 0, 0);
--moz-transform: translate3d(0, 0, 0);
+	margin:-20vh auto 0 auto;
 }
 
 .roses{
