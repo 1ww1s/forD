@@ -5,7 +5,7 @@ margin: 0;
 padding: 0;
 font-family: 'Montserrat';
 scroll-behavior: smooth;
-
+background-color: rgba(21, 18, 15, 100%);
 }
 
 a{
@@ -19,7 +19,7 @@ a{
 }
 #background{
 	width:100%;
-	min-height:100vh;
+	height:100vh;
 	background-color: rgba(21, 18, 15, 100%);
 }
 #Left-B{
@@ -60,11 +60,11 @@ a{
 	-webkit-filter: blur(24vh);
 	-moz-filter: blur(24vh);
 	-ms-filter: blur(24vh);
-    filter: blur(24vh);
+    	filter: blur(24vh);
 	-webkit-backface-visibility: hidden;
--moz-backface-visibility: hidden;
--webkit-transform: translate3d(0, 0, 0);
--moz-transform: translate3d(0, 0, 0);
+	-moz-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
 }
 
 
@@ -273,9 +273,9 @@ a{
 }
 
 #Right-B{
-	width:100%;
 	width:50vh;
 	right:-5vh;
+	height:0%;
 }
 
 #B-title1{
