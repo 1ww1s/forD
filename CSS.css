@@ -35,12 +35,14 @@ font-family: 'Montserrat';
 		background-size: cover;
 		background-attachment: scroll;
         width: 100%;
-		
+		overflow:hidden;
+		position:relative;
 	}
 	
 	#B-Size-Contents{
 		overflow:hidden;
-		width:100%;		
+		width:100%;	
+		position:relative;
 	}
 	
 	#B-Navigation{
@@ -153,7 +155,7 @@ font-family: 'Montserrat';
 		background: radial-gradient(43.99% 171.7% at 49.91% 49.78%, #FFBA91 0%, #D99369 73.72%);
 		box-shadow: 0px 0.3vh 0px #A57253, 0px 0.3vh  6vh rgba(252, 180, 136, 0.55);
 		transform: matrix(1, 0, 0, 1, 0, 0);
-		
+		-webkit-tap-highlight-color: transparent;
 		border-radius: 10% 10% 10% 10% / 15vh 15vh 15vh 15vh;  /*  горизонтальные / вертикальные  */
 		border:0;
 		position:relative;
@@ -366,12 +368,11 @@ font-family: 'Montserrat';
 		object-fit:cover;
 	}
 	#B-Blur2-1{
-		height:300vh;
-		width:355vw;
-		margin-left:-300vw;
+		height:200vh;
+		width:55vw;
 		background: white;
 		filter: blur(12vh);
-		margin-top:-250vh;
+		margin-top:-150vh;
 		position:relative;
 		z-index:0;
 	}
@@ -379,10 +380,9 @@ font-family: 'Montserrat';
 		position:relative;
 		z-index:0;
 		height:90vh;
-		width:12.5vw;
-		
+		background: white;
+		width:12.5vw;	
 		margin-left:30vw;
-		background-color:white;
 		margin-top:-130vh;
 		filter: blur(15vh);
 	}
@@ -456,9 +456,9 @@ font-family: 'Montserrat';
 			height:100vh;
 			opacity:0;
 			position:fixed;
-			z-index:-100;
 			will-change: opacity;
 			transition: opacity 0.5s;
+			z-index:-100;
 		}
 	
 	
@@ -501,33 +501,17 @@ font-family: 'Montserrat';
 		margin-top:3.5vh;
 		float:right;
 		width:6vw;
-		position:relative;
 	}
 	#circle{
 		width:2.46vw;
 		height:2.46vw;
-		border-radius:100%;
-		
 		border:0.62vw solid #1E1E1E;
-		margin:0 auto;
-		z-index:1;
-		position:relative;
-	}
-	#human-head{
-		height:100%;
-		width:93%;
-		border-radius:100%;
-		background-color:#D9D9D9;
-		margin:0 auto;
 	}
 
 	#human-body{
 		margin:-0.62vw auto 0 auto;
 		width:4.31vw;
 		height:2.7vw;
-		background-color:#D9D9D9;
-		border-radius: 30% 30% 0 0 / 60% 60% 0 0;
-		position:relative;
 	}
 	
 	
@@ -646,8 +630,11 @@ font-family: 'Montserrat';
 	
 	
 	#B-Profession{
-		min-height:100vh;
+		min-height:0vh;
 		width:100%;
+		overflow:hidden;
+		
+		position:relative;
 	}
 	#B-About-Profession{
 		width:100%;
@@ -656,20 +643,23 @@ font-family: 'Montserrat';
 		height:16vw;
 		overflow:hidden;
 		position:relative;
+		
 	}
 	.T-About-Profession{	
 		float:left;
 		font-size:10vw;
 		line-height:22vw;
 		margin-left:2vw;
+		
 	}
 
 
 	#BT-Opportunities{
 		width:100vw;
-		min-height:100vh;
+		min-height:0;
 		overflow:hidden;
 		margin-top:0;
+		
 		
 	}
 	#B-size2{
@@ -677,40 +667,45 @@ font-family: 'Montserrat';
 		width:100%;
 		margin-top:0;
 		float:left;
+		
 	}
 	.This-Opportunity{
 		height:14vw;
 		width:100%;
-		font-size:9vw;
+		font-size:7.3vw;
 		line-height:14vw;
 		float:left;
 		margin-left:2vw;
+		
 	}
 	#Opportunities{
 		width:90%;
 		margin-top:0;
 		float:left;
 		padding:0vw;
+		
 	}
 	
 
 	.t1{
 		width:100%;
-		font-size:4vw;
-		line-height:6vw;
+		font-size:3.1vw;
+		line-height:4vw;
 		margin-top:0;
 		float:left;
+		
 	}
 	.t2, .t3, .t4, .t5, .t6{
 		width:100%;
-		font-size:4vw;
-		line-height:6vw;
+		font-size:3.1vw;
+		line-height:4vw;
 		float:left;
 		margin-top:2vw;
 	}
 	.color2{  /* Block Opportunities */
 		color: #786759;
 		font-weight: 700;
+		
 	}
 	
 	
@@ -719,6 +714,7 @@ font-family: 'Montserrat';
 		height:65vw;
 		float:right;
 		margin-top:0;
+		
 	}
 	.p1, .p2, .p3, .p4, .p5, .p6{
 		background: #FFFFFF;
@@ -756,11 +752,28 @@ font-family: 'Montserrat';
 		position:relative;
 		z-index:0;
 		margin:2vw auto 0 auto;
+		
 	}
 	
+	#B-IMG-B-P{
+		margin-top:-105vw;
+		widows:100%;
+		height:0;
+	}
 	
-	
-	
+	#B-Blur2-1{
+		width:50vw;
+		height:200vw;
+		filter: blur(11vw);
+		margin-top:-150vw;
+	}
+	#B-Blur2-2{
+		height:70vw;
+		width:15vw;	
+		margin-top:-100vw;
+		margin-left:18vw;
+		filter: blur(6vw);
+	}
 	
 	
 	
@@ -773,9 +786,14 @@ font-family: 'Montserrat';
 	}
 	
 	
-	#B-IMG-B-P{
-		display:none;	
+	.IMG-B-P{
+		height:110vw;
+		width:85vw;
+		object-fit:cover;	
+		margin-right:-15vw;
+
 	}
+	
 	
 	
 	
