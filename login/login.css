@@ -57,16 +57,15 @@ a{
 	z-index:-100;
 	position:absolute;
 	border-radius: 100%;
-	-webkit-filter: blur(24vh);
+	/*-webkit-filter: blur(24vh);
 	-moz-filter: blur(24vh);
 	-ms-filter: blur(24vh);
-    filter: blur(24vh);
-	-webkit-backface-visibility: hidden;
+	filter: blur(24vh);*/
+	/*-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);*/
 }
-
 
 #Right-B{
 	float:right;
@@ -235,14 +234,16 @@ a{
 	height:90%;
 	position:relative;
 }
+#content-pk{
+	max-width:330px;
+	margin:0 auto;
+}
 	
 #Left-B{
 	width:100%;
-	height:400px;
+	height:500px;
 	margin: 0 auto;
 	position:relative;
-	background-color:blue;
-	
 }
 
 #IMG1{
@@ -250,7 +251,6 @@ a{
 	margin: 0 auto;
 	text-align:center;
 	position:relative;
-	
 }
 .IMG1{
 	display:none;
@@ -261,13 +261,13 @@ a{
 	height:100%;
 }
 #blur2{
-	right:0;
-	width:50vh;
-	height:50vh;
+	top:-410px;
+	right:6px;
+	width:260px;
+	height:270px;
 	z-index:-100;
 	position:relative;
 	margin: 0 auto;
-	margin:0 auto 0 auto;
 }
 
 .roses{
@@ -276,7 +276,9 @@ a{
 
 #Right-B{
 	width:100%;
-	height:0%;
+	height:20%;
+	background-color:red;
+	margin-top:-200px;
 }
 
 #B-title1{
