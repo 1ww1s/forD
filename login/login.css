@@ -57,14 +57,14 @@ a{
 	z-index:-100;
 	position:absolute;
 	border-radius: 100%;
-	/*-webkit-filter: blur(24vh);
+	-webkit-filter: blur(24vh);
 	-moz-filter: blur(24vh);
 	-ms-filter: blur(24vh);
-	filter: blur(24vh);*/
-	/*-webkit-backface-visibility: hidden;
+	filter: blur(24vh);
+	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	-webkit-transform: translate3d(0, 0, 0);
-	-moz-transform: translate3d(0, 0, 0);*/
+	-moz-transform: translate3d(0, 0, 0);
 }
 
 #Right-B{
@@ -277,65 +277,63 @@ a{
 #Right-B{
 	width:100%;
 	height:20%;
-	background-color:red;
-	margin-top:-200px;
+	margin-top:-225px;
 }
 
 #B-title1{
 	padding-top:0;
 }
 .title1{
-	font-size:4vh;
+	font-size:27px;
 	letter-spacing: 0.115em;
 	font-weight: 300;
 }
 
 #B-login{
-	padding-top:2vh;
+	padding-top:13.5px;
 	width:66%;
 	margin:0 auto;
 }
 #login{
-	font-size:2vh;
-	height:4.6vh;
-	padding-left:2vh;
-	margin-left:-1vh;
+	font-size:13.5px;
+	height:31px;
+	padding-left:13.5px;
+	margin-left:-6.75px;
 }
 #B-password{
 	width:66%;
-	padding-top:6vh;
+	padding-top:40.5px;
 }
 #password{
-	font-size:2vh;
+	font-size:13.5px;
 	float:left;
-	height:4.6vh;
-	padding-left:2vh;
-	margin-left:-1vh;
+	height:31px;
+	padding-left:13.5px;
+	margin-left:-6.75px;
 }
 .Enroll{
-		width: 26vh;
-		height: 5.6vh;
-		margin-top:2.8vh;
-		font-size: 1.8vh;
-		border-radius: 15% 15% 15% 15% / 15vh 15vh 15vh 15vh;  /*  горизонтальные / вертикальные  */
+		width: 175.5px;
+		height: 38px;
+		margin-top:19px;
+		font-size: 12px;
+		border-radius: 15% 15% 15% 15% / 100px 100px 100px 100px ;  /*  горизонтальные / вертикальные  */
 	}
 #or{
-	height:5vh;
-	margin-top:	4vh;
-	font-size:1.8vh;
+	height:34px;
+	margin-top:	27px;
+	font-size:12px;
 }
-
 
 
 .Line1{
-	margin-top:1vh;
+	margin-top:6.75px;
 }
 
 .Line2{
-	margin-top:1vh;
+	margin-top:6.75px;
 }
 
 .registration{
 	color:#FFCDAF;
-	font-size:1.8vh;
+	font-size:12px;
 }
