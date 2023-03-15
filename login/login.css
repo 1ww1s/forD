@@ -6,6 +6,7 @@ padding: 0;
 font-family: 'Montserrat';
 scroll-behavior: smooth;
 background-color: rgba(21, 18, 15, 100%);
+
 }
 
 a{
@@ -32,10 +33,8 @@ a{
 }
 #IMG1{
 	width:100%;
-	height:500px;
-	float:right;
+	height:100%;
 	position:relative;
-	background-color:red;
 }
 
 .IMG1{
@@ -61,7 +60,7 @@ a{
 	-webkit-filter: blur(24vh);
 	-moz-filter: blur(24vh);
 	-ms-filter: blur(24vh);
-    	filter: blur(24vh);
+    filter: blur(24vh);
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	-webkit-transform: translate3d(0, 0, 0);
@@ -109,7 +108,7 @@ a{
 	float:left;
 	height:7vh;
 	font-family: 'Montserrat';
-	font-weight: 200;
+	font-weight: 300;
 	border-radius:5vh;
 	outline:none;
 	padding-left:3vh;
@@ -128,7 +127,7 @@ a{
 	float:left;
 	height:7vh;
 	font-family: 'Montserrat';
-	font-weight: 200;
+	font-weight: 350;
 	border-radius:5vh;
 	outline:none;
 	padding-left:3vh;
@@ -232,31 +231,32 @@ a{
 @media(max-aspect-ratio:3/2){
 
 #content-mobile{
-	width:40vh;
+	width:100%;
 	height:90%;
 	position:relative;
-	margin:0 auto;
-
 }
 	
 #Left-B{
 	width:100%;
-	right:5vh;
-	height:40vh;
+	height:200px;
 	margin: 0 auto;
 	position:relative;
+	background-color:red;
 }
 
 #IMG1{
 	width:100%;
+	margin: 0 auto;
 	text-align:center;
 	position:relative;
+	
 }
 .IMG1{
 	display:none;
 }
 .IMG2{
 	display:block;
+	margin: 0 auto;
 	height:76vh;
 }
 #blur2{
@@ -266,7 +266,7 @@ a{
 	z-index:-100;
 	position:relative;
 	margin: 0 auto;
-	margin:-20vh auto 0 auto;
+	margin:0 auto 0 auto;
 }
 
 .roses{
@@ -274,8 +274,7 @@ a{
 }
 
 #Right-B{
-	width:50vh;
-	right:-5vh;
+	width:100%;
 	height:0%;
 }
 
