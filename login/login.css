@@ -238,11 +238,11 @@ a{
 }
 #content-mobile{
 	width:100%;
-	height:90%;
+	height:100%;
 	position:relative;
 }
 #content-pk{
-	max-width:95%;
+	max-width:100%;
 	width:500px;
 	margin:0 auto;
 }
