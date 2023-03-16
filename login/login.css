@@ -356,7 +356,7 @@ a{
 	font-size:12px;
 }
 
-
+/*
 @media(max-width:530px){
 	.title1{
 		font-size:7.5vw;
@@ -389,7 +389,7 @@ a{
 		height: 7.1vw;
 		margin-top:3.5vw;
 		font-size: 2.3vw;
-		border-radius: 15% 15% 15% 15% / 19vw 19vw 19vw 19vw ;  /*  горизонтальные / вертикальные  */
+		border-radius: 15% 15% 15% 15% / 19vw 19vw 19vw 19vw ; 
 	}
 	#or{
 		height:6.4vw;
