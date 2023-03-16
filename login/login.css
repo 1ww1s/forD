@@ -307,56 +307,71 @@ a{
 	font-weight: 300;
 }
 #B-login{
-	padding-top:13.5px;
+	padding-top:20px;
 	width:66%;
 	margin:0 auto;
 	
 }
 #login{
-	font-size:13.5px;
-	height:31px;
-	padding-left:13.5px;
-	margin-left:-6.75px;
+	font-size:20px;
+	height:46px;
+	padding-left:20px;
+	margin-left:-10px;
 }
 #B-password{
 	width:66%;
-	padding-top:40.5px;
+	padding-top:60px;
 }
 #password{
-	font-size:13.5px;
-	float:left;
-	height:31px;
-	padding-left:13.5px;
-	margin-left:-6.75px;
+	font-size:20px;
+	height:46px;
+	padding-left:20px;
+	margin-left:-10px;
 }
 .Enroll{
-		width: 175.5px;
-		height: 38px;
-		margin-top:19px;
-		font-size: 12px;
-		border-radius: 15% 15% 15% 15% / 100px 100px 100px 100px ;  /*  горизонтальные / вертикальные  */
+		top:6px;
+		width: 260px;
+		height: 56px;
+		margin-top:28px;
+		font-size: 17.7px;
+		border-radius: 15% 15% 15% 15% / 148px 148px 148px 148px ;
+		box-shadow: 0px 2.4px 0px #A57253, 0px 2.4px  47px rgba(252, 180, 136, 0.55);
 	}
 #or{
-	height:34px;
-	margin-top:	27px;
-	font-size:12px;
+	height:50px;
+	margin-top:	46px;
+	font-size:17.7px;
 }
 
 
-.Line1{
-	margin-top:6.75px;
-}
+	.Line1{
+		margin-top:10px;
+	}
+	.line1_1{
+		height:0.5px;
+	}
+	.line1_2{
+		height:0.5px;
+		margin-top:-0.5px;
+	}
 
-.Line2{
-	margin-top:6.75px;
-}
+	.Line2{
+		margin-top:10px;
+	}
+	.line2_1{
+		height:0.5px;
+	}
+	.line2_2{
+		height:0.5px;
+		margin-top:-0.5px;
+	}
 
-.registration{
-	color:#FFCDAF;
-	font-size:12px;
-}
+	.registration{
+		color:#FFCDAF;
+		font-size:17.7px;
+	}
 
-/*
+
 @media(max-width:530px){
 	.title1{
 		font-size:7.5vw;
@@ -370,44 +385,42 @@ a{
 	z-index:100000;
 }
 	#login{
-		font-size:2.5vw;
-		height:5.8vw;
-		padding-left:2.5vw;
-		margin-left:-1.1vw;	
+		font-size:3.7vw;
+		height:8.5vw;
+		padding-left:3.7vw;
+		margin-left:-1.6vw;	
 	}
 	#B-password{
-		padding-top:7.6vw;
+		padding-top:11vw;
 	}
 	#password{
-		font-size:2.5vw;
-		height:5.8vw;
-		padding-left:2.5vw;
-		margin-left:-1.1vw;	
+		font-size:3.7vw;
+		height:8.5vw;
+		padding-left:3.7vw;
+		margin-left:-1.6vw;	
 	}
 	.Enroll{
-		width: 33vw;
-		height: 7.1vw;
-		margin-top:3.5vw;
-		font-size: 2.3vw;
-		border-radius: 15% 15% 15% 15% / 19vw 19vw 19vw 19vw ; 
+		width: 48vw;
+		height: 10.5vw;
+		margin-top:5.1vw;
+		font-size: 3.4vw;
+		border-radius: 15% 15% 15% 15% / 28vw 28vw 28vw 28vw ; 
 	}
 	#or{
-		height:6.4vw;
-		margin-top:	5vw;
-		font-size:2.3vw;
+		height:9.4vw;
+		margin-top:	7.4vw;
+		font-size:3.5vw;
 	}
 	
 	.Line1{
-		margin-top:1.3vw;
+		margin-top:1.9vw;
 	}
-
+	
 	.Line2{
-		margin-top:1.3vw;
+		margin-top:1.9vw;
 	}
 
-	.registration{
-		font-size:2.3vw;
-	}
+
 	#blur2{
 		position:absolute;
 		right:12vw;
@@ -417,6 +430,10 @@ a{
 		-ms-filter: blur(30vw);
 		filter: blur(30vw);
 	}
+	.registration{
+		font-size:3.3vw;
+	}
 }
 
 }}
+
