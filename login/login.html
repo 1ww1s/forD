@@ -3,16 +3,15 @@
 <head>
 <script src="library.js"></script>
  <link rel="stylesheet" type="text/css" media="all"  href="login.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,500,700,800,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,350,400,500,700,800,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Bebas Neue:100,200,250,300,700,800,900,1200" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Строчка, которая делает магию-->
 <title>AAAAAA</title>
 
 
 </head>
 <body>
-<link rel="prefetch" href="img1.png">
-					<link rel="prefetch" href="img2.png">
+
 
 	<div id="body-wrapper">
 		<div id="background">
@@ -20,19 +19,16 @@
 			<div id="Left-B">
 				<div id="blur1"></div>
 				<div id="IMG1">
-
 					<img class="IMG1" src = "img1.png">
 					<img class="IMG2" src = "img2.png">
+					<img class="roses" src = "roses.png">
 				</div>
-				<img class="roses" src = "roses.png">
-				
 				<div class = "pk" id="blur2">
 				</div>
 				
 			</div>	
-				
-			<div class = "mobile" id="blur2">
-			</div>
+			<div class="mobile" id="blur2">
+				</div>
 			
 			<div id ="Right-B">
 				<div id="content-pk">
@@ -41,42 +37,30 @@
 					</div>
 					<div id="B-login">
 						<label for = "login">
-						<input id="login" type="text" placeholder="Логин...">   <!--  LOGIN   -->
+							<input class="login" onfocus="focusL(this)" type="text" placeholder="Логин...">   <!--  LOGIN   -->
 						</label>
 					</div>
 					<div id="B-password">
 						<label for = "password">
-						<input id="password" type="text" placeholder="Пароль...">     <!--  PASSWORD   -->
+							<input class="password"  onfocus="focusP(this)" type="text" placeholder="Пароль...">     <!--  PASSWORD   -->
 						</label>
+						<div class = "textError"></div>
+						<div class = "forgotPassword"><a href="#">Забыли пароль?</a></div>
 					</div>
 					<div id = "B-Enroll">
 						<button type="text" onclick="sign_in()" class = "Enroll">ВОЙТИ</button>							
 					</div>
 					
 					<div id = "or">
-						
-						<div id = "or-left">
-							<div class = "Line1">
-								<div class="line1_1">
-								</div>
-								<div class="line1_2">
-								</div>
-							</div>
-						</div>
-						<div id = "or-center">ИЛИ</div>
-						<div id = "or-right">
-							<div class = "Line2">
-								<div class="line2_1">
-								</div>
-								<div class="line2_2">
-								</div>
-							</div>
-						</div>
-						
+						Или продолжить через
 					</div>
+					
+					<div class = "vk">
+						<a href="#"><img class="imgVk" src = "VK.png"></a>
+					</div>
+					
 					<div class = "registration">
-						<a href="http://localhost:8080/auth/sign-up/">ЗАРЕГИСТРИРОВАТЬСЯ</a>
-
+						<a href="http://localhost:8080/auth/sign-up/">У меня ещё нет аккаунта.</a>
 					</div>
 					
 					
@@ -88,29 +72,162 @@
 
 <script>
 	
+	alert(window.innerWidth);
+	
+		
+	const login = document.querySelector('.login');
+    const password = document.querySelector('.password')
+	const textError = document.querySelector('.textError')
+	
+	
+	
+	function checkLoginFormat(value){  // проверка на верный формат логина
+	 	let format = value.includes('@') && value.includes('.') && (0 < value.indexOf('@') && value.indexOf('@') < value.indexOf('.') - 1 &&  value.indexOf('.') < value.length - 1) ? true : false;
+	 	if(format == false && !login.classList.contains('redOutline')){
+			incorrectFormatLogin();
+		}
+		return format;
+	};
+	function checkPasswordFormat(value){
+		let format = value != "";
+		if(format == false && !password.classList.contains('redOutline')){
+			incorrectFormatPassword();
+		}
+		return format;
+	}
+	
+	
+ 
+	function incorrectFormatLogin(){  // ф-ия добавления красных полей и текста (для логина)
+		addRedOutline(login, password);
+		textError.classList.add('active'); 
+		textError.innerText = "*Неверный формат логина";
+	};
+	function incorrectFormatPassword(){  // ф-ия добавления красных полей и текста (для пароля)
+		addRedOutline(password);
+		textError.classList.add('active'); 
+		textError.innerText = "*Пожалуйста, введите пароль";
+	};
+	
+	
+	
+	function addRedOutline(){
+		for(let value of arguments){
+			value.classList.add("redOutline");
+		}
+	}
+	function removeRedOutline(){
+		for(let value of arguments){
+			value.classList.remove("redOutline");
+		}
+	}
+	
+	
+	
+	
+	function clearText(){
+		textError.innerText = "";
+		textError.classList.remove('active');
+	}
+	
+	
+	function focusL(target){ // при нажатии на поле логина
+		if(login.classList.contains('redOutline')){  // если имеется класс - удалить его
+			removeRedOutline(login, password);
+			clearText();
+		}
+	}
+	
+	function focusP(target){ // при нажатии на поле пароля
+		if(!login.classList.contains('redOutline') && password.classList.contains('redOutline')){
+			removeRedOutline(password);
+			clearText();
+		}
+	}
+	
+	
+	
+	
+	function Error200(){
+		addRedOutline(password);
+		textError.classList.add('active'); 
+		textError.innerText = "*Неправильный пароль!";
+	}
+	function Error400(){
+		addRedOutline(login, password);
+		textError.classList.add('active'); 
+		textError.innerText = "*Этот логин еще не зарегистрирован!";
+	}
+	
+	
+	document.addEventListener("keyup", function(event) {
+  		if (event.keyCode === 13) {
+   			event.preventDefault();
+   			sign_in();
+   		}
+	});
+
+
+	/* Любое изменение приравнивается к фокусу на поля */
+	
+		login.oninput = function(){
+			focusL();
+		}
+		password.oninput = function(){
+			focusP();
+		}
+	
+	/**/
 	
 	function sign_in() {
-    let login = document.querySelector('#login');
-    let password = document.querySelector('#password');
-    fetch("http://localhost:8080/auth/sign-in/", {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({"login": login.value, "password": password.value})
-    })
-        .then(res => {
-            if (res.redirected) {
-                document.location = res.url
-            }
-        })
+	
+
+		
+		
+		let key1 = checkLoginFormat(login.value);
+		let key2 = false;
+		if(key1 == true){
+			key2 = checkPasswordFormat(password.value);
+		}
+		
+		
+		if(key1 && key2){
+			
+			alert('all true');
+			
+					
+		
+		    fetch("http://localhost:8080/auth/sign-in/", {
+		        method: 'POST',
+		        headers: {
+		            'Content-Type': 'application/json'
+		        },
+		        body: JSON.stringify({"login": login.value, "password": password.value})
+		    })
+		        .then(res => {
+		            if (res.redirected) {
+		                document.location = res.url
+		            }
+		            let response = JSON.stringify(res.body);
+           			if (res.status === 500) {
+						
+               			console.log("happend something bad, try again")
+            		} else if (res.status === 200 && response["exist"] === true) {
+							Error200();
+               			 	console.log("email is exist and code was sent")
+          			} else if (res.status === 400 && response["exist"] === false) {
+							Error400();
+               		 		console.log("email is not registered in site")
+           		 	}	
+		           
+		        })
+		}
 }
 	
 	
 
 </script>
-
-
+	
 
 
 </body>
