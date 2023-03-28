@@ -268,7 +268,7 @@ a{
 	overflow-X:visible;
 }
 #content-mobile{
-	width:500px;
+	width:100%;
 	margin:0 auto;
 	position:relative;
 	
@@ -305,9 +305,10 @@ a{
 #blur2{
 	top:-390px;
 	right:6px;
-	width:400px;
-	height:400px;
-	
+	max-width:400px;
+	max-height:400px;
+	width:76vw;
+	height:76vw;
 	z-index:1;
 	margin: 0 auto;
 	position:relative;
@@ -422,7 +423,7 @@ a{
 		font-size:17.7px;
 	}
 
-/*
+
 @media(max-width:530px){
 	.title1{
 		font-size:7.5vw;
@@ -435,6 +436,11 @@ a{
 	#content-pk{
 	z-index:100000;
 }
+	#B-login{
+		padding-top:4vw;
+		width:66%;
+		height:11vw;
+	}
 	.login{
 		font-size:3.7vw;
 		height:8.5vw;
@@ -442,7 +448,7 @@ a{
 		margin-left:-1.6vw;	
 	}
 	#B-password{
-		padding-top:11vw;
+		height:10vw;
 	}
 	.password{
 		font-size:3.7vw;
@@ -450,20 +456,22 @@ a{
 		padding-left:3.7vw;
 		margin-left:-1.6vw;	
 	}
-	.Enroll{
-		width: 48vw;
+	#B-Enroll{
+		width: 49vw;
 		height: 10.5vw;
-		margin-top:5.1vw;
+		margin-top:7vw;
+}
+	.Enroll{
+		height: 10.5vw;
 		font-size: 3.4vw;
 		border-radius: 15% 15% 15% 15% / 28vw 28vw 28vw 28vw ; 
 	}
 	#or{
-		height:9.4vw;
-		margin-top:	7.4vw;
-		font-size:3.5vw;
+		height:6vw;
+		margin-top:	4.5vw;
+		font-size:3.3vw;
 	}
 	
-
 	#blur2{
 		position:absolute;
 		right:12vw;
@@ -476,6 +484,40 @@ a{
 	.registration{
 		font-size:3.3vw;
 	}
+	
+	.login.redOutline {
+	outline: 0.1vw solid #FF0000;
+}
+	.password.redOutline {
+		outline: 0.1vw solid #FF0000;
+	}
+
+
+
+	.textError{
+		margin-top:1vw;
+		font-size:2.4vw;
+		display:none;
+	}
+	.textError.active{
+		display:block;
+	}
+
+	.forgotPassword {
+		margin-top:1vw;
+		font-size:2.4vw;
+	}
+	
+	
+	.vk{
+		width:9vw;
+		height:9vw;
+	}
+	.imgVk{
+		height:9vw;
+		display:block;
+	}
+
 }
 
 }}
