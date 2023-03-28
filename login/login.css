@@ -65,7 +65,6 @@ a{
 	-moz-backface-visibility: hidden;
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
-	
 }
 
 #Right-B{
@@ -80,7 +79,7 @@ a{
 	height:100%;
 }
 #B-title1{
-	padding-top:15vh;
+	padding-top:20vh;
 	width:96%;
 	text-align:center;
 	margin:0 auto;
@@ -93,14 +92,16 @@ a{
 	font-weight: 200;
 	text-transform: uppercase;
 	z-index:100;
+	
 }
 
 #B-login{
-	padding-top:8vh;
-	width:64%;
+	height:10vh;
+	width:90%;
 	margin:0 auto;
+	
 }
-#login{
+.login{
 	width:100%;
 	border:0;
 	font-size:3vh;
@@ -109,17 +110,22 @@ a{
 	height:7vh;
 	font-family: 'Montserrat';
 	font-weight: 300;
-	border-radius:5vh;
+	border-radius:0.8vh;
 	outline:none;
 	padding-left:3vh;
 	margin-left:-1.5vh;
+	background-color:#4A3E33;
+	color:#FFFFFF;
 }
+
+
+
 #B-password{
-	padding-top:10vh;
-	width:64%;
+	width:90%;
+	height:13vh;
 	margin:0 auto;
 }
-#password{
+.password{
 	width:100%;
 	border:0;
 	font-size:3vh;
@@ -128,18 +134,75 @@ a{
 	height:7vh;
 	font-family: 'Montserrat';
 	font-weight: 350;
-	border-radius:5vh;
+	border-radius:0.8vh;
 	outline:none;
 	padding-left:3vh;
 	margin-left:-1.5vh;
+	background-color:#4A3E33;
+	color:#FFFFFF;
+	overflow:hidden;
 }
+
+
+.login.redOutline {
+	outline: 0.2vh solid #FF0000;
+}
+.password.redOutline {
+	outline: 0.2vh solid #FF0000;
+}
+
+
+
+.textError{
+	float:left;
+	width:75%;
+	margin-top:1vh;
+	font-family: 'Montserrat';
+	font-size:1.8vh;
+	font-weight:400;
+
+	color:#FF0000;
+	display:none;
+}
+.textError.active{
+	display:block;
+}
+
+.forgotPassword {
+	font-family: 'Montserrat';
+	font-size:1.8vh;
+	font-weight:500;
+	margin-top:1vh;
+	width:25%;
+	text-align:right;
+	float:right;
+}
+
+.forgotPassword a{
+	color: #C6B5AA;
+	text-decoration: underline;
+	outline:none;
+	cursor: pointer;  /* cursor: default;*/
+}
+
+
+
+
+
+
+
 #B-Enroll{
 	text-align:center;
+	margin:0 auto;
+	width: 40vh;
+	height:10vh;
+	margin-top:1vh;
 }
 .Enroll{
-		width: 40vh;
+		float:left;
+		width:100%;
 		height: 8.5vh;
-		margin-top:6vh;
+		padding:0;
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
 		font-size: 2.7vh;
@@ -153,80 +216,48 @@ a{
 		border:0;
 		position:relative;
 		-webkit-tap-highlight-color: transparent;
+		outline:none;
 	}
 #or{
 	width:100%;
-	height:7vh;
-	color:#9B9B9B;
-	font-weight:200;
+	height:4vh;
+	font-family: 'Montserrat';
+	font-weight: 500;
+	color: #C6B5AA;
 	text-align:center;
-	margin-top:	8vh;
-	font-size:2.4vh;
+	margin-top:	3vh;
+	font-size:2vh;
 }
 
-#or-left{
-	width:44%;
-	float:left;
+.vk{
+	width:5vh;
+	text-align:center;
+	margin: 0 auto;
 }
-#or-center{
-	width:12%;
-	float:left;
-}
-#or-right{
-	width:44%;
-	float:left;
+.imgVk{
+	height:5vh;
+	display:block;
 }
 
-.Line1{
-	margin-top:1.5vh;
-	width:45%;
-	float:right;
-}
-.line1_1{
-	width:50%;
-	height:0.1vh;
-	background: linear-gradient(90deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
-	margin-left:50%;
-}
-.line1_2{
-	width:50%;
-	height:0.1vh;
-	background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, #D9D9D9 100%);
-	margin-top:-0.1vh;
-}
-
-.Line2{
-	width:45%;
-	margin-top:1.5vh;
-	float:left;
-}
-.line2_1{
-	width:50%;
-	height:0.1vh;
-	background: linear-gradient(90deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
-	margin-left:50%;
-}
-.line2_2{
-	width:50%;
-	height:0.1vh;
-	background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0%, #D9D9D9 100%);
-	margin-top:-0.1vh;
-}
 
 .registration{
-	color:#FFCDAF;
-	font-size:2.7vh;
+	color: #FFE0CC;
+	font-size:2vh;
 	text-align:center;
-	font-weight:500;
+	font-weight:700;
+	margin-top: 6vh;
 }
 
 .registration a{
 	text-decoration:none;
 	color:#FFCDAF;
+	outline:none;
 }
 .IMG2{
 	display:none;
 }
+
+
 
 @media(max-aspect-ratio:3/2){
 	.pk{display:none;}
@@ -237,9 +268,10 @@ a{
 	overflow-X:visible;
 }
 #content-mobile{
-	width:100%;
-	height:100%;
+	width:500px;
+	margin:0 auto;
 	position:relative;
+	
 }
 #content-pk{
 	max-width:100%;
@@ -273,10 +305,9 @@ a{
 #blur2{
 	top:-390px;
 	right:6px;
-	max-width:400px;
-	max-height:400px;
-	width:76vw;
-	height:76vw;
+	width:400px;
+	height:400px;
+	
 	z-index:1;
 	margin: 0 auto;
 	position:relative;
@@ -309,10 +340,10 @@ a{
 #B-login{
 	padding-top:20px;
 	width:66%;
+	height:60px;
 	margin:0 auto;
-	
 }
-#login{
+.login{
 	font-size:20px;
 	height:46px;
 	padding-left:20px;
@@ -320,58 +351,78 @@ a{
 }
 #B-password{
 	width:66%;
-	padding-top:60px;
+	height:60px;
 }
-#password{
+.password{
 	font-size:20px;
 	height:46px;
 	padding-left:20px;
 	margin-left:-10px;
 }
+
+.login.redOutline {
+	outline: 1px solid #FF0000;
+}
+.password.redOutline {
+	outline: 1px solid #FF0000;
+}
+
+
+
+.textError{
+	width:60%;
+	margin-top:5px;
+	font-size:12px;
+	display:none;
+}
+.textError.active{
+	display:block;
+}
+
+.forgotPassword {
+	width:40%;
+	font-size:12px;
+	margin-top:5px;
+}
+
+
+
+
+
+#B-Enroll{
+	width: 260px;
+	height: 56px;
+	margin-top:28px;
+}
 .Enroll{
 		top:6px;
-		width: 260px;
 		height: 56px;
-		margin-top:28px;
 		font-size: 17.7px;
 		border-radius: 15% 15% 15% 15% / 148px 148px 148px 148px ;
 		box-shadow: 0px 2.4px 0px #A57253, 0px 2.4px  47px rgba(252, 180, 136, 0.55);
 	}
 #or{
-	height:50px;
-	margin-top:	46px;
+	height:32px;
+	margin-top:	24px;
 	font-size:17.7px;
 }
 
-
-	.Line1{
-		margin-top:10px;
-	}
-	.line1_1{
-		height:0.5px;
-	}
-	.line1_2{
-		height:0.5px;
-		margin-top:-0.5px;
-	}
-
-	.Line2{
-		margin-top:10px;
-	}
-	.line2_1{
-		height:0.5px;
-	}
-	.line2_2{
-		height:0.5px;
-		margin-top:-0.5px;
-	}
+.vk{
+	width:50px;
+	text-align:center;
+	margin: 0 auto;
+}
+.imgVk{
+	height:50px;
+	display:block;
+}
 
 	.registration{
-		color:#FFCDAF;
+		margin-top:60px;
 		font-size:17.7px;
 	}
 
-
+/*
 @media(max-width:530px){
 	.title1{
 		font-size:7.5vw;
@@ -384,7 +435,7 @@ a{
 	#content-pk{
 	z-index:100000;
 }
-	#login{
+	.login{
 		font-size:3.7vw;
 		height:8.5vw;
 		padding-left:3.7vw;
@@ -393,7 +444,7 @@ a{
 	#B-password{
 		padding-top:11vw;
 	}
-	#password{
+	.password{
 		font-size:3.7vw;
 		height:8.5vw;
 		padding-left:3.7vw;
@@ -412,14 +463,6 @@ a{
 		font-size:3.5vw;
 	}
 	
-	.Line1{
-		margin-top:1.9vw;
-	}
-	
-	.Line2{
-		margin-top:1.9vw;
-	}
-
 
 	#blur2{
 		position:absolute;
