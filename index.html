@@ -1,126 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src="library.js"></script>
- <link rel="stylesheet" type="text/css" href="forHome.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,700,800,900" rel="stylesheet">
- 
-<title>AAAAAA</title>
- <!-- <meta name="viewport" content="width=device-width">  -->
-</head>
+ <head>
+   <link rel="stylesheet" type="text/css" media="all" href="./CSS.css">
+  <title>prog</title>
+ </head> 
 <body>
 
 
-	<div id="container">
-			<!-- Master Permanent Makeup -->
-				<div id="B-Master-Permanent-Makeup">
-					
-					<div id ="B-Size-Contents">
-						
-						<div id="B-Button">		
-							<div id="Button1">
-							</div>
-							<div id="Button2">
-							</div>
-							<div id="Button3">
-							</div>
-						</div>		
-			
-						<div class="nav" id ="Navigation">
-							<a href="index2.html">О ПРОФЕССИИ</a>
-							<a href="#">ПРОДУКТЫ</a>
-							<a href="#">РЕГИСТРАЦИЯ</a>
-							<a href="#">ОБО МНЕ</a>
-							<a href="#">FAQ</a>
-						</div>
-						
-						
-						
-									
-								
-						<div id="Right-B">
-							<div id="BT-Master-Permanent-Makeup">
-									
-									<h1 class = "T-Master-Permanent-Makeup">МАСТЕР ПЕРМАНЕНТНОГО МАКИЯЖА</h1> 
-									
-							</div>
-							<div class = "pk">
-							<div id = "B-Enroll">
-								<button class = "Enroll">ЗАПИСАТЬСЯ</button>
-								<div id ="BT2">*приобрети самую высокооплачиваемую профессию в бьюти-сфере с безграничными возможностями роста</div>
-							</div>	
-							</div>
-						
-						</div>
-						<div id = "Left-B">
-							<div id ="IMG-Master">
-								<img class="master-png" src = "img/master.png">
-								<div id="BR1"></div>
-								<div id="BR2"></div>
-								
-								
-							</div>
-							
-							
-							
-							<div class="mobile">
-							<div id = "B-Enroll">
-								<button class = "Enroll">ЗАПИСАТЬСЯ</button>
-								<div id ="BT2">*приобрети самую высокооплачиваемую профессию в бьюти-сфере с безграничными возможностями роста</div>
-							</div>	
-							</div>
-						</div>
-						
-						
-					</div>	
-		
-				</div>	
-			<!--  -->
-			
-			
-			
-	
-			
-			
-			
-			
-			<!-- Catalog -->
-			<div id ="B-Size-Contents">
-				<div id="BT-Course-Catalog">
-					<h1 class="T-Course-Catalog">Каталог курсов</h1>
-				</div>	
-				
-				<div id="B-Course1">
-					<!-- IMG -->
-						<div id="red_pres_img">
-							<img class="red_pres_img" src = "img/red_pres_img.png">
-						</div>
-					
-					
-					<!--  -->
-					
-					
-				
-				</div>
-			
-			</div>
-			<!--  -->
-			
-			
-		</div>
-	</div>
+  <div id="container">
+    
+    
+    
+  </div>
 
 
+  <script>
+    "use strict"
 
-<script>
-	
-	
-	
-	
-</script>
+    
+
+    const container = document.querySelector('#container')
+    
+    function showCircle(radius){
+      let circle = document.createElement('div')
+      circle.className = 'circle'
+      circle.style.width = radius * 2 + 'px'
+      circle.style.height = radius * 2 + 'px'
+      document.body.append(circle)
+    }
+
+    container.onpointerdown = function(event){
+
+      console.log(event.pressure)
+    }
+
+  
 
 
+    
+  </script> 
 
-</script>
-</body>
-</html>	
+</body>   
+ 
+
+ 
+ 
+ </html>
